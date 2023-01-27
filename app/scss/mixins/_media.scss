@@ -1,0 +1,12 @@
+@mixin media($point) {
+    @media(min-width: $point) {
+        @content;
+    }
+}
+
+@mixin retina($pixel-ratio: 2){
+    @media (-webkit-min-device-pixel-ratio: $pixel-ratio),
+    (min-resolution: #{$pixel-ratio} + dppx){
+        @content;
+    }
+}

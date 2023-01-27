@@ -4,38 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cat energy</title>
     <link rel="stylesheet" href="css/main.css">
-</head>
-
-<body>
-    <svg>
-        <use xlink:href="img/icons/sprite.svg#clock"></use>
-    </svg>
-    <svg>
-        <use xlink:href="img/icons/sprite.svg#coin"></use>
-    </svg>
-    <svg>
-        <use xlink:href="img/icons/sprite.svg#clouds-fill"></use>
-    </svg>
-    <!-- пример подключения картинок, и html-блоков, удалить перед началом работы -->
-    <div class="test">
-        <!-- подключаем шапку -->
-        @@include('blocks/header.html')
-
-        <div class="test__content">
-            <img class="test__img" src="img/mentor.jpg" alt="mentor picture">
-            <div class="test__pic"></div>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="header__wrap">
+                    <a href="#" class="logo header__logo">
+                        <img src="img/logo.svg" alt="Логотип" class="logo_pic" width="33" height="38">
+                    </a>
+                    <a href="#" class="logo header_logo">
+                        <img src="img/logo-title.svg" alt="Логотип" class="logo_pic">
+                    </a>
+                </div>
+                <div class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link nav__link--current">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Каталог продукции</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Подбор программы</a>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" aria-label="открыть меню" class="header__burger">
+                    <span class="header__burger-line"></span>
+                </button>
+                <div class="header__content">
+                    <div class="header__heading">
+                        <h1 class="header__title">Функциональное питание для котов</h1>
+                        <p class="header__decr">Занялся собой? Займись котом!</p>
+                    </div>
+                    <button class="btn btn--brand btn--xl" type="submit">Подобрать программу</button>
+                    <div class="product">
+                        <img src="app/img/cat-energy.jpg" alt="Картинка банки с кошачей едой">
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- подключаем подвал -->
-        @@include('blocks/footer.html')
-
-    </div>
-
-
-    <!-- подключаем js -->
-    <script src="js/main.js"></script>
-</body>
-
-</html>
+    </body>
+    <script>
+        const nav = document.querySelector(".nav");
+        const header__burger = document.querySelector(".header__burger");
+        header__burger.addEventListener("click", function () {
+          nav.classList.toggle("_active");
+          header__burger.classList.toggle("_active");
+        })
+      </script>
+    </html>

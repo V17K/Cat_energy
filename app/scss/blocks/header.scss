@@ -1,0 +1,112 @@
+.header__wrap {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 18px;
+}
+
+.header__burger {
+    position: fixed;
+    width: 16px;
+    height: 27px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: block;
+    z-index: 6;
+    top: 15px;
+    right: 20px;
+}
+
+.header__burger-line {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 2px;
+    width: 23px;
+    left: 50%;
+    background-color: #000;
+}
+
+.header__burger-line::before,
+.header__burger-line::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(7px);
+    background-color: #000;
+    transition: transform 0.2s ease;
+}
+
+.header__burger span::after {
+    transform: translateY(-7px);
+}
+
+.header__burger-line span::after {
+    transform: translateY(-7px);
+}
+
+.header__burger._active .header__burger-line {
+    background-color: transparent;
+}
+
+.header__burger._active .header__burger-line::before {
+    transform: translateY(0) rotate(45deg);
+    background-color: #000;
+}
+.header__burger._active .header__burger-line::after {
+    transform: translateY(0) rotate(-45deg);
+    background-color: #000;
+}
+
+.header__burger-line:hover{
+    color: rgba(129, 179, 210, .6);
+}
+
+.header__content{
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    position: relative;
+    z-index: -2;
+    background-image: -webkit-image-set(
+        url('../img/cat-bg.webp') 1x,
+        url('../img/cat-bg.jpg') 1x      
+    );
+    background-image: image-set(
+        url('../img/cat-bg.webp') 1x,
+        url('../img/cat-bg.jpg') 1x
+    );
+}
+
+.header__content::after{
+    content: "";
+    background-color: rgba(104, 183, 56, 0.85);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.header__heading{
+    max-width: 250px;
+    margin: 0 auto 29px;
+}
+
+.header__title{
+    @include font(36px, 36px, 400, $font-main);
+    color: #fff;
+    margin: 0;
+    padding: 27px 0 25px;
+    text-align: center;
+}
+
+.header__decr{
+    @include font(14px, 14px, 400, $font-main);
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
