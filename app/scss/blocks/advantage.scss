@@ -1,0 +1,35 @@
+.advantage {
+    margin: 0 20px 49px;
+}   
+
+.advantage__title{
+    @include font(36px, 40px, 400, $font-main);
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.advantage__list {
+    padding: 0;
+}
+
+.advantage__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.advantage__item:last-child{
+    padding-bottom: 0;
+}
+
+.advantage__icon{
+    background-color: $brand-color;
+    padding: 14px 15px;
+}
+
+.advantage__descr {
+    margin: 0;
+    padding-left: 20px;
+    @include font(14px, 18px, 400, $font-submain);
+}
