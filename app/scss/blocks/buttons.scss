@@ -3,7 +3,7 @@
     background-color: transparent;
     color: #000;
     text-decoration: none;
-    @include font(20px, 20px, 400, $font-main);
+    @include font(14px, 18px, 400, $font-main);
     cursor: pointer;
     border-radius: 0;
     padding: 4px 8px;
@@ -13,12 +13,18 @@
     transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
 }
 
-.btn--xl{
+.btn--medium{
     padding: 7px 44px;
     margin: 0 auto;
     display: block;
+    margin-bottom: 20px;
 }
 
 .btn--brand{
     color: #fff;
+    background-color: $brand-color;
 }
+
+.btn--wide-mobile{
+    width: 100%;
+    }

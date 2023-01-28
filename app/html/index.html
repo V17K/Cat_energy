@@ -6,53 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat energy</title>
     <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="header">
-                <div class="header__wrap">
-                    <a href="#" class="logo header__logo">
-                        <img src="img/logo.svg" alt="Логотип" class="logo_pic" width="33" height="38">
-                    </a>
-                    <a href="#" class="logo header_logo">
-                        <img src="img/logo-title.svg" alt="Логотип" class="logo_pic">
-                    </a>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header__wrap">
+                <a href="#" class="logo header__logo">
+                    <img src="img/logo.svg" alt="Логотип" class="logo_pic" width="33" height="38">
+                </a>
+                <a href="#" class="logo header_logo">
+                    <img src="img/logo-title.svg" alt="Логотип" class="logo_pic">
+                </a>
+            </div>
+            <div class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link nav__link--current">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Каталог продукции</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Подбор программы</a>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" aria-label="открыть меню" class="header__burger">
+                <span class="header__burger-line"></span>
+            </button>
+            <div class="header__content">
+                <div class="header__heading">
+                    <h1 class="header__title">Функциональное питание для котов</h1>
+                    <p class="header__decr">Занялся собой? Займись котом!</p>
                 </div>
-                <div class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#" class="nav__link nav__link--current">Главная</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Каталог продукции</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Подбор программы</a>
-                        </li>
-                    </ul>
-                </div>
-                <button type="button" aria-label="открыть меню" class="header__burger">
-                    <span class="header__burger-line"></span>
-                </button>
-                <div class="header__content">
-                    <div class="header__heading">
-                        <h1 class="header__title">Функциональное питание для котов</h1>
-                        <p class="header__decr">Занялся собой? Займись котом!</p>
-                    </div>
-                    <button class="btn btn--brand btn--xl" type="submit">Подобрать программу</button>
-                    <div class="product">
-                        <img src="app/img/cat-energy.jpg" alt="Картинка банки с кошачей едой">
-                    </div>
+                <div class="promo">
+                    <img src="img/cat-energy.png" class="product-pic" alt="Картинка банки с кошачей едой" width="280"
+                        height="270">
                 </div>
             </div>
+            <button class="btn btn--brand btn--medium btn--wide-mobile" type="button">Подобрать программу</button>
         </div>
-    </body>
-    <script>
-        const nav = document.querySelector(".nav");
-        const header__burger = document.querySelector(".header__burger");
-        header__burger.addEventListener("click", function () {
-          nav.classList.toggle("_active");
-          header__burger.classList.toggle("_active");
-        })
-      </script>
-    </html>
+        <section class="catalog">
+            <ul class="catalog__list">
+                <li class="catalog__item">
+                    <div class="catalog__heading">
+                        <div class="catalog__title">
+                            <img src="img/puma.svg" class="catalog__icon" alt="Иконка пумы">
+                            <div class="catalog__caption">Похудение</div>
+                        </div>
+                        <p class="catalog__descr">Ваш кот весит больше собаки и почти утратил способность лазить по
+                            деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+                    </div>
+                        <a href="#" class="catalog__link">Каталог Slim<img src="img/arrow.svg" alt="Иконка стрелки" class="catalog__link-pic"></a>
+                </li>
+                <li class="catalog__item">
+                    <div class="catalog__heading">
+                        <div class="catalog__title">
+                            <img src="img/cat-back.svg" class="catalog__icon" alt="Иконка пумы">
+                            <div class="catalog__caption">Набор массы</div>
+                        </div>
+                        <p class="catalog__descr">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+                    </div>
+                        <a href="#" class="catalog__link">Каталог Pro<img src="img/arrow.svg" alt="Иконка стрелки" class="catalog__link-pic"></a>
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+<script>
+    const nav = document.querySelector(".nav");
+    const header__burger = document.querySelector(".header__burger");
+    header__burger.addEventListener("click", function () {
+        nav.classList.toggle("_active");
+        header__burger.classList.toggle("_active");
+    })
+</script>
+
+</html>
