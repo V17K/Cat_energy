@@ -1,11 +1,14 @@
 .header__wrap {
-    display: flex;
-    align-items: center;
     padding: 10px 20px 18px;
 }
 
+.header__logo{
+    display: flex;
+    align-items: center;
+}
+
 .header__burger {
-    position: fixed;
+    position: absolute;
     width: 16px;
     height: 27px;
     padding: 0;
