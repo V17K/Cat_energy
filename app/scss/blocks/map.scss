@@ -1,0 +1,22 @@
+
+.map__heading{
+    display: flex;
+    align-items: center;
+    padding: 26px 20px;
+}
+
+.map__title{
+    @include font(16px, 20px, 400, $font-main);
+    text-transform: uppercase;
+}
+
+.map__descr{
+    @include font(14px, 20px, 400, $font-submain);
+}
+
+.map__pic{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
