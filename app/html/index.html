@@ -69,14 +69,17 @@
     <div class="container">
         <div class="header">
             <div class="header__wrap">
-                <div class="header__logo">
+                <div class="header__wrap-logo">
                     <a href="#" class="logo">
-                        <img src="img/logo.svg" alt="Логотип" class="logo_pic" width="33" height="38">
+                        <img src="img/logo.svg" alt="Логотип" class="logo__pic" width="33" height="38">
                     </a>
                     <a href="#" class="logo logo--title">
-                        <img src="img/logo-title.svg" alt="Логотип" class="logo_pic">
+                        <img src="img/logo-title.svg" alt="Логотип" class="logo__pic">
                     </a>
                 </div>
+                <button type="button" aria-label="открыть меню" class="header__burger">
+                    <span class="header__burger-line"></span>
+                </button>
             </div>
             <div class="nav">
                 <ul class="nav__list">
@@ -91,19 +94,19 @@
                     </li>
                 </ul>
             </div>
-            <button type="button" aria-label="открыть меню" class="header__burger">
-                <span class="header__burger-line"></span>
-            </button>
+
             <div class="header__content">
-                <div class="header__heading">
-                    <h1 class="header__title">Функциональное питание для котов</h1>
-                    <p class="header__decr">Занялся собой? Займись котом!</p>
+                <div class="header__content-wrap">
+                    <div class="header__heading">
+                        <h1 class="header__title">Функциональное питание для котов</h1>
+                        <p class="header__decr">Занялся собой? Займись котом!</p>
+                    </div>
+                    <div class="promo header__promo">
+                        <button class="promo__btn btn btn--brand btn--medium-tablet" type="button">Подобрать программу</button>
+                        <img src="img/cat-energy.png" class="product-pic" alt="Картинка банки с кошачей едой" width="280"
+                            height="270">
+                    </div>
                 </div>
-            </div>
-            <div class="promo">
-                <img src="img/cat-energy.png" class="product-pic" alt="Картинка банки с кошачей едой" width="280"
-                    height="270">
-                <button class="btn btn--brand btn--medium btn--wide-mobile" type="button">Подобрать программу</button>
             </div>
         </div>
         <section class="catalog">
@@ -178,8 +181,8 @@
                 Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
                 спит по 16 часов в день. </p>
                 <ul class="benefits__list">
-                    <div class="benefits__item">
-                    </div>
+                    <li class="benefits__item">
+                    </li>
                 </ul>
                 <h3 class="benefits__subtitle">Затраты на питание: 15 000 РУБ. </h3>
                 <div class="slider">
