@@ -1,5 +1,4 @@
 .catalog__list {
-    margin: 0 20px;
     padding: 0;
 }
 
@@ -13,7 +12,7 @@
 .catalog__title {
     display: flex;
     align-items: center;
-    padding-bottom: 22px; 
+    margin-bottom: 22px; 
 }
 
 .catalog__caption {
@@ -26,18 +25,23 @@
     @include font(14px, 18px, 400, $font-submain);
     color: #444;
     margin: 0;
-    padding-bottom: 23px;
+    margin-bottom: 23px;
     max-width: 230px;
-    border-bottom: 1px solid #D9D9D9;
-    margin-bottom: 19px;
 }
 
 .catalog__link {
-    padding-bottom: 22px;
+    padding-top: 19px;
     @include font(16px, 16px, 400, $font-main);
     text-transform: uppercase;
-    color: #000;
+    color: #000000;
     text-decoration: none;
+    width: 100%;
+    display: block;
+    border-top: 1px solid #D9D9D9;
+    &:hover{
+        color: rgba(0, 0, 0, 0.1);
+
+    }
 }
 
 .catalog__link-pic{

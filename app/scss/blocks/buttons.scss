@@ -21,11 +21,26 @@
 .btn--brand{
     color: #ffffff;
     background-color: $brand-color;
+    &:hover{
+        background-color: #5EAA2F;
+    }
+    &:active{
+        background-color: #5EAA2F;
+        color: rgba(255, 255, 255, .3);
+    }
 }
 
 .btn--secondary{
     color: #444444;
     background-color: #f2f2f2;
+    &:hover{
+        background-color: #EBEBEB;
+        color: #444444
+    }   
+    &:active{
+        color: rgba(68, 68, 68, .3);
+        background-color: #EBEBEB;
+    }
 }
 
 .btn--medium-tablet{

@@ -1,25 +1,26 @@
 .advantage {
-    margin: 0 20px 49px;
+ 
 }   
 
 .advantage__title{
     @include font(36px, 40px, 400, $font-main);
-    margin: 0;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
+    margin-top: 0;
 }
 
 .advantage__list {
     padding: 0;
+    margin-top: 0;
 }
 
 .advantage__item {
     display: flex;
     align-items: center;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .advantage__item:last-child{
-    padding-bottom: 0;
+    margin-bottom: 49px;
 }
 
 .advantage__icon{
