@@ -6,11 +6,13 @@
 }
 
 .map__title{
+    margin: 0;
     @include font(16px, 20px, 400, $font-main);
     text-transform: uppercase;
 }
 
 .map__descr{
+    margin: 0;
     @include font(14px, 20px, 400, $font-submain);
 }
 
