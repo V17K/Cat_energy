@@ -1,7 +1,7 @@
 .logo__title-icon{
     color: #111111;
-    padding-left: 56px;
+    margin: 0 auto;
     @include media($tablet){
-        padding-left: 12px;
-        }
+        margin-left: 12px;
+    }
 }
