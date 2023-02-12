@@ -2,6 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include media($tablet) {
+        position: relative;
+    }
 }
 
 .promo__btn{
@@ -11,6 +14,8 @@
     @include media($tablet) {
         width: 244px;
         position: absolute;
+        top: 29px;
+        left: 118px;
     }
 }
 

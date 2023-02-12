@@ -109,10 +109,12 @@
     @include media($tablet) {
         background-image: none;
     }
+
 }
 
 .header__promo {
     margin-bottom: calc(var(--header-bottom-offset) * -1);
+
 }
 
 // .header__content::after{
@@ -130,6 +132,7 @@
         max-width: 410px;
         margin-left: 118px;
         margin-bottom: 20px;
+
     }
 }
 
