@@ -1,4 +1,4 @@
-.header{
+.header {
     --header-bottom-offset: 195px;
 }
 
@@ -7,13 +7,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include media($tablet){
+    @include media($tablet) {
         padding: 0;
-        padding-top: 10px;
-        }
+        margin-bottom: 63px;
+    }
+    @include media($desktop) {
+        margin-top:55px;
+    }
 }
 
-.header__wrap-logo{
+.header__wrap-logo {
     display: flex;
     align-items: center;
     flex-grow: 1;
@@ -30,9 +33,9 @@
     z-index: 6;
     position: relative;
     background-color: transparent;
-    @include media($tablet){
+    @include media($tablet) {
         display: none;
-        }
+    }
 }
 
 .header__burger-line {
@@ -83,11 +86,14 @@
     color: rgba(129, 179, 210, 0.6);
 }
 
-.header__content-wrap{
+.header__content-wrap {
     padding-left: $gatter-X-mobile;
     padding-right: $gatter-X-mobile;
     padding-top: 27px;
     margin-bottom: 20px;
+    @include media($tablet) {
+        padding-top: 0;
+    }
 }
 
 .header__content {
@@ -100,12 +106,12 @@
     background-position: center center;
     background-clip: content-box;
     padding-bottom: var(--header-bottom-offset);
-    @include media($tablet){
+    @include media($tablet) {
         background-image: none;
     }
 }
 
-.header__promo{
+.header__promo {
     margin-bottom: calc(var(--header-bottom-offset) * -1);
 }
 
@@ -120,13 +126,24 @@
 .header__heading {
     max-width: 250px;
     margin: 0 auto 29px;
+    @include media($tablet) {
+        max-width: 410px;
+        margin-left: 118px;
+        margin-bottom: 20px;
+    }
 }
 
 .header__title {
     @include font(36px, 36px, 400, $font-main);
     color: #fff;
-    margin: 0 0 25px 0;
+    margin: 0 0 25px;
     text-align: center;
+    @include media($tablet) {
+        @include font(60px, 60px, 400, $font-main);
+        color: #000000;
+        text-align: left;
+        margin-bottom: 41px;
+    }
 }
 
 .header__decr {
@@ -135,13 +152,31 @@
     margin: 0;
     text-transform: uppercase;
     text-align: center;
+    @include media($tablet) {
+        @include font(20px, 20px, 400, $font-main);
+        color: #000000;
+        text-align: left;
+    }
 }
 
-.header__logo{
+.header__logo {
     flex-grow: 1;
     display: flex;
     align-items: center;
-    @include media($tablet){
+    @include media($tablet) {
         margin-left: 31px;
+    }
 }
+
+.header__logo-pic {
+    width: 33px;
+    height: 38px;
+    @include media($tablet) {
+        width: 60px;
+        height: 50px;
+    }
+    @include media($desktop) {
+        width: 70px;
+        height: 60px;
+    }
 }

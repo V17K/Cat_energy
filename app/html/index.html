@@ -131,19 +131,17 @@
             <div class="header__wrap">
                 <div class="header__wrap-logo">
                     <a href="/" class="logo header__logo">
-                        <picture>
-                            <source srcset="img/logo-mobile.avif, img/logo-mobile-2x.avif"  type="image/avif"
-                            media="(min-width: 320px)">
-                            <source srcset="img/logo-mobile.webp, img/logo-mobile-2x.webp"  type="image/webp"
-                            media="(min-width: 320px)">
-                            <source srcset="img/logo-tablet.avif, img/logo-tablet-2x.avif"  type="image/avif"
+                        <picture> 
+                            <source srcset="img/logo-desktop.svg, img/logo-desktop-2x.svg"  type="image/webp"
+                            media="(min-width: 1440px)">
+                            <source srcset="img/logo-tablet.svg, img/logo-tablet-2x.svg"  type="image/webp"
                             media="(min-width: 768px)">
-                            <source srcset="img/logo-tablet.webp, img/logo-tablet-2x.webp"  type="image/webp"
-                            media="(min-width: 768px)">
-                            <img srcset="img/logo-mobile.jpg" src="img/logo-mobile-2x,jpg 2x" alt="На главную" width="33" height="38">
+                            <source srcset="img/logo-mobile.svg, img/logo-mobile-2x.svg"  type="image/webp"
+                            media="(min-width: 320px)">
+                            <img srcset="img/logo-mobile.svg" alt="На главную" width="33" height="38" class="header__logo-pic">
                         </picture>
                         <svg class="logo__title-icon" width="101" height="18" aria-hidden="true" focusable="false">
-                            <use href="#logo-title" />
+                            <use href="#logo-title"/>
                         </svg>
                     </a>
                 </div>
@@ -174,15 +172,15 @@
                         <button class="promo__btn btn btn--brand btn--medium-tablet" type="button">Подобрать
                             программу</button>
                             <picture>
-                            <source srcset="img/promo-mobile.avif, img/promo-mobile-2x.avif"  type="image/avif"
-                            media="(min-width: 320px)">
-                            </picture>
-                            <source srcset="img/promo-mobile.webp, img/logo-promo-2x.webp"  type="image/webp"
-                            media="(min-width: 320px)">
-                            <source srcset="img/promo-tablet.avif, img/promo-tablet-2x.avif"  type="image/avif"
+                            <source srcset="img/promo-desktop.png, img/promo-desktop-2x.png"  type="image/webp"
+                            media="(min-width: 1440px)">
+                            <source srcset="img/promo-tablet.png, img/promo-tablet-2x.png"  type="image/webp"
                             media="(min-width: 768px)">
+                            <source srcset="img/promo-mobile.png, img/promo-mobile-2x.png"  type="image/webp"
+                            media="(min-width: 320px)">
                         <img src="img/promo-mobile.png" class="promo__pic" alt="Картинка банки с кошачей едой"
                             width="280" height="270">
+                        </picture>
                     </div>
                 </div>
             </div>

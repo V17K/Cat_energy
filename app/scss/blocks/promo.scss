@@ -8,4 +8,19 @@
     font-size: 14px;
     order: 1;
     width: 100%;
+    @include media($tablet) {
+        width: 244px;
+        position: absolute;
+    }
+}
+
+.promo__pic{
+    @include media($tablet) {
+        width: 709px;
+        height: 609px;
+    }
+    @include media($desktop) {
+        width: 552px;
+        height: 499px;
+    }
 }
