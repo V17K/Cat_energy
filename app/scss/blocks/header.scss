@@ -1,5 +1,25 @@
 .header {
     --header-bottom-offset: 195px;
+    @include media($desktop) {
+        margin-top:55px;
+    }
+}
+
+.header:after{
+    @include media($desktop) {
+        content: "";
+        background-color: #000000;
+        position: absolute;
+        right: 0;
+        top:0;
+        bottom: -195px;
+        left: 50%;
+        background-image: linear-gradient(rgba($brand-color, 0.85), rgba($brand-color, 0.85)), -webkit-image-set(url('../img/cat-bg-desktop.jpg') 1x, url('../img/cat-bg-desktop.jpg') 1x);
+        background-image: linear-gradient(rgba($brand-color, 0.85), rgba($brand-color, 0.85)), image-set(url('../img/cat-bg-desktop.jpg') 1x, url('../img/cat-bg-desktop.jpg') 1x);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
 }
 
 .header__wrap {
@@ -10,9 +30,6 @@
     @include media($tablet) {
         padding: 0;
         margin-bottom: 63px;
-    }
-    @include media($desktop) {
-        margin-top:55px;
     }
 }
 

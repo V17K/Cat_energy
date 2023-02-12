@@ -27,5 +27,6 @@
     @include media($desktop) {
         width: 552px;
         height: 499px;
+        margin-top: -250px;
     }
 }
