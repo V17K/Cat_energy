@@ -12,7 +12,7 @@
         position: absolute;
         right: 0;
         top:0;
-        bottom: -195px;
+        bottom: 0;
         left: 50%;
         background-image: linear-gradient(rgba($brand-color, 0.85), rgba($brand-color, 0.85)), -webkit-image-set(url('../img/cat-bg-desktop.jpg') 1x, url('../img/cat-bg-desktop.jpg') 1x);
         background-image: linear-gradient(rgba($brand-color, 0.85), rgba($brand-color, 0.85)), image-set(url('../img/cat-bg-desktop.jpg') 1x, url('../img/cat-bg-desktop.jpg') 1x);
@@ -37,6 +37,9 @@
     display: flex;
     align-items: center;
     flex-grow: 1;
+    @include media($tablet) {
+        flex-grow: 0;
+    }
 }
 
 .header__burger {
