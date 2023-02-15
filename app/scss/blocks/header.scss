@@ -1,7 +1,9 @@
 .header {
     --header-bottom-offset: 195px;
     @include media($desktop) {
-        margin-top:55px;
+        position: relative;
+        padding-top:55px;
+        margin-bottom: 82px;
     }
 }
 
@@ -11,14 +13,12 @@
         background-color: #000000;
         position: absolute;
         right: 0;
-        top:0;
+        top: 0;
         bottom: 0;
         left: 50%;
-        background-image: linear-gradient(rgba($brand-color, 0.85), rgba($brand-color, 0.85)), -webkit-image-set(url('../img/cat-bg-desktop.jpg') 1x, url('../img/cat-bg-desktop.jpg') 1x);
-        background-image: linear-gradient(rgba($brand-color, 0.85), rgba($brand-color, 0.85)), image-set(url('../img/cat-bg-desktop.jpg') 1x, url('../img/cat-bg-desktop.jpg') 1x);
-        background-repeat: no-repeat;
-        background-size: cover;
+        width: 50vw;
         z-index: -1;
+        @include cat-bg('../img/cat-bg-desktop.jpg', '../img/cat-bg-desktop-2x.jpg');
     }
 }
 
@@ -30,6 +30,11 @@
     @include media($tablet) {
         padding: 0;
         margin-bottom: 63px;
+    }
+    @include media($desktop) {
+        padding-left: $gatter-X-desktop;
+        padding-right: $gatter-X-desktop;
+        
     }
 }
 
@@ -119,11 +124,7 @@
 .header__content {
     position: relative;
     isolation: isolate;
-    background-image: linear-gradient(rgba($brand-color, 0.85), rgba($brand-color, 0.85)), -webkit-image-set(url('../img/cat-bg.webp') 1x, url('../img/cat-bg.jpg') 1x);
-    background-image: linear-gradient(rgba($brand-color, 0.85), rgba($brand-color, 0.85)), image-set(url('../img/cat-bg.webp') 1x, url('../img/cat-bg.jpg') 1x);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    @include cat-bg('../img/cat-bg.jpg');
     background-clip: content-box;
     padding-bottom: var(--header-bottom-offset);
     @include media($tablet) {
@@ -149,10 +150,12 @@
     max-width: 250px;
     margin: 0 auto 29px;
     @include media($tablet) {
-        max-width: 410px;
+        max-width: 414px;
         margin-left: 118px;
         margin-bottom: 20px;
-
+    }
+    @include media($desktop) {
+        margin-left: 200px;
     }
 }
 

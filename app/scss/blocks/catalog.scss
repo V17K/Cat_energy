@@ -1,5 +1,10 @@
 .catalog__list {
     padding: 0;
+    margin-top: 0;
+    @include media($desktop) {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .catalog__item {
@@ -8,6 +13,7 @@
     padding: 24px 33px 22px 22px;
     margin-bottom: 20px;
 }
+
 
 .catalog__title {
     display: flex;
@@ -40,7 +46,6 @@
     border-top: 1px solid #D9D9D9;
     &:hover{
         color: rgba(0, 0, 0, 0.1);
-
     }
 }
 
@@ -51,9 +56,27 @@
 .catalog__icon{
     width: 50px;
     height: 53px;
+    @include media($tablet) {
+        width: 200px;
+        height: 211px;
+        order: 1;
+    }
+    @include media($desktop) {
+        width: 100px;
+        height: 106px;
+        order: -1;
+    }
 }
 
 .catalog__icon--back{
     width: 67px;
     height: 53px;
+    @include media($tablet) {
+        width: 268px;
+        height: 200px;
+    }
+    @include media($desktop) {
+        width: 134px;
+        height: 100px;
+    }
 }

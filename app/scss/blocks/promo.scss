@@ -16,6 +16,10 @@
         position: absolute;
         top: 29px;
         left: 118px;
+        @include font(20px, 24px, 400, $font-main);
+    }
+    @include media($desktop) {
+        left: 200px;
     }
 }
 
@@ -28,5 +32,6 @@
         width: 552px;
         height: 499px;
         margin-top: -250px;
+        margin-left: 230px;
     }
 }
