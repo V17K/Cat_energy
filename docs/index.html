@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat energy</title>
-    <link rel="preload" href="fonts/Oswald/oswald-regular.ttf?t=1676488254256" as="font" type="font/ttf" crossorigin>
-    <link rel="stylesheet" href="css/main.css?t=1676488254256">
+    <link rel="preload" href="fonts/Oswald/oswald-regular.ttf?t=1676722909658" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="css/main.css?t=1676722909658">
     <svg xmlns="http://www.w3.org/2000/svg" display="none">
         <symbol id="logo-title" viewBox="0 0 101 18">
             <g clip-path="url(#clip0_135_3354)">
@@ -109,7 +109,7 @@
                 fill="white" />
         </symbol>
         <symbol id="arrow" viewBox="0 0 32 12">
-            <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
+            <line y1="6" x2="18" y2="6" stroke="currentColor" stroke-width="2" />
             <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="currentColor" />
         </symbol>
         <symbol id="map-logo" viewBox="0 0 57 53">
@@ -131,17 +131,15 @@
             <div class="header__wrap">
                 <div class="header__wrap-logo">
                     <a href="/" class="logo header__logo">
-                        <picture> 
-                            <source srcset="img/logo-desktop.svg" type="image/svg+xml"
-                            media="(min-width: 1440px)">
-                            <source srcset="img/logo-tablet.svg"  type="image/svg+xml"
-                            media="(min-width: 768px)">
-                            <source srcset="img/logo-mobile.svg"  type="image/svg+xml" 
-                            media="(min-width: 320px)">
-                            <img srcset="img/logo-mobile.svg" alt="На главную" width="33" height="38" class="header__logo-pic">
+                        <picture>
+                            <source srcset="img/logo-desktop.svg" type="image/svg+xml" media="(min-width: 1440px)">
+                            <source srcset="img/logo-tablet.svg" type="image/svg+xml" media="(min-width: 768px)">
+                            <source srcset="img/logo-mobile.svg" type="image/svg+xml" media="(min-width: 320px)">
+                            <img srcset="img/logo-mobile.svg" alt="На главную" width="33" height="38"
+                                class="header__logo-pic">
                         </picture>
                         <svg class="logo__title-icon" width="101" height="18" aria-hidden="true" focusable="false">
-                            <use href="#logo-title"/>
+                            <use href="#logo-title" />
                         </svg>
                     </a>
                 </div>
@@ -171,15 +169,15 @@
                     <div class="promo header__promo">
                         <button class="promo__btn btn btn--brand btn--medium-tablet" type="button">Подобрать
                             программу</button>
-                            <picture>
-                            <source srcset="img/promo-desktop.png, img/promo-desktop-2x.png"  type="image/webp"
-                            media="(min-width: 1440px)">
-                            <source srcset="img/promo-tablet.png, img/promo-tablet-2x.png"  type="image/webp"
-                            media="(min-width: 768px)">
-                            <source srcset="img/promo-mobile.png, img/promo-mobile-2x.png"  type="image/webp"
-                            media="(min-width: 320px)">
-                        <img src="img/promo-mobile.png" class="promo__pic" alt="Картинка банки с кошачей едой"
-                            width="280" height="270">
+                        <picture>
+                            <source srcset="img/promo-desktop.png, img/promo-desktop-2x.png" type="image/webp"
+                                media="(min-width: 1440px)">
+                            <source srcset="img/promo-tablet.png, img/promo-tablet-2x.png" type="image/webp"
+                                media="(min-width: 768px)">
+                            <source srcset="img/promo-mobile.png, img/promo-mobile-2x.png" type="image/webp"
+                                media="(min-width: 320px)">
+                            <img src="img/promo-mobile.png" class="promo__pic" alt="Картинка банки с кошачей едой"
+                                width="280" height="270">
                         </picture>
                     </div>
                 </div>
@@ -189,17 +187,14 @@
             <section class="catalog">
                 <ul class="catalog__list">
                     <li class="catalog__item">
-                        <div class="catalog__heading">
-                            <div class="catalog__title">
-                                <svg class="catalog__icon" width="50" height="50" aria-label="Картинка кошки"
-                                    role="img">
-                                    <use href="#cat-slim" />
-                                </svg>
-                                <div class="catalog__caption">Похудение</div>
-                            </div>
-                            <p class="catalog__descr">Ваш кот весит больше собаки и почти утратил способность лазить по
-                                деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+                        <div class="catalog__item-wrap">
+                            <svg class="catalog__icon" width="50" height="50" aria-label="Картинка кошки" role="img">
+                                <use href="#cat-slim" />
+                            </svg>
+                            <h3 class="catalog__caption">Похудение</h3>
                         </div>
+                        <p class="catalog__descr">Ваш кот весит больше собаки и почти утратил способность лазить по
+                            деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
                         <a href="#" class="catalog__link">Каталог Slim
                             <svg class="catalog__link-pic" width="32" height="10" aria-label="Картинка стрелки"
                                 role="img">
@@ -208,17 +203,15 @@
                         </a>
                     </li>
                     <li class="catalog__item">
-                        <div class="catalog__heading">
-                            <div class="catalog__title">
-                                <svg class="catalog__icon catalog__icon--back" width="67" height="50"
-                                    aria-label="Картинка кошки" role="img">
-                                    <use href="#cat-back" />
-                                </svg>
-                                <div class="catalog__caption">набор массы</div>
-                            </div>
+                        <div class="catalog__item-wrap">
+                            <svg class="catalog__icon catalog__icon--back" width="67" height="50"
+                                aria-label="Картинка кошки" role="img">
+                                <use href="#cat-back" />
+                            </svg>
+                            <h3 class="catalog__caption">Набор массы</h3>
+                        </div>
                             <p class="catalog__descr">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
                                 Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-                        </div>
                         <a href="#" class="catalog__link">Каталог Pro
                             <svg class="catalog__link-pic" width="32" height="10" aria-label="Картинка стрелки"
                                 role="img">

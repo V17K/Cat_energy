@@ -16,25 +16,33 @@
 .btn--brand{
     color: #ffffff;
     background-color: $brand-color;
-    &:hover{
-        background-color: #5EAA2F;
-    }
     &:active{
         background-color: #5EAA2F;
         color: rgba(255, 255, 255, .3);
+    }
+    @include media($desktop){
+        &:hover{
+            background-color: #5EAA2F;
+        }
     }
 }
 
 .btn--secondary{
     color: #444444;
     background-color: #f2f2f2;
-    &:hover{
-        background-color: #EBEBEB;
-        color: #444444
-    }   
     &:active{
         color: rgba(68, 68, 68, .3);
         background-color: #EBEBEB;
+    }
+    @include media($tablet){
+        @include font(20px, 24px, 400, $font-main);
+        padding: 14px 26px;
+    }
+    @include media($desktop){
+        &:hover{
+            background-color: #EBEBEB;
+            color: #444444
+        }   
     }
 }
 
