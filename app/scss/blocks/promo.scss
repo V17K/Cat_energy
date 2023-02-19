@@ -15,7 +15,7 @@
         width: 244px;
         position: absolute;
         top: 29px;
-        left: 118px;
+        left: 100px;
         @include font(20px, 24px, 400, $font-main);
     }
     @include media($desktop) {
@@ -27,6 +27,7 @@
     @include media($tablet) {
         width: 709px;
         height: 609px;
+        margin-left: -31px;
     }
     @include media($desktop) {
         width: 552px;

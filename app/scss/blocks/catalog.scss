@@ -11,7 +11,7 @@
 .catalog__item {
     background-color: $secondary-bg;
     list-style: none;
-    padding: 24px 33px 22px 22px;
+    padding: 19px 33px 22px 22px;
     margin-bottom: 20px;
     @include media($tablet) {
         position: relative;
@@ -19,7 +19,7 @@
         margin-bottom: 30px;
     }
     @include media($tablet) {
-        padding: 47px 61px 59px 52px;
+        padding: 73px 61px 59px 53px;
     }
     
 }
@@ -43,7 +43,7 @@
         padding-left: 0;
     }
     @include media($tablet) {
-        padding-left: 62px;
+        padding-left: 0;
     }
 }
 
@@ -65,8 +65,22 @@
     }
 }
 
+.catalog__descr-back{
+    @include media($tablet) {
+        margin-bottom: 76px;
+    }
+}
+
+.catalog__descr:last-child{
+    @include media($tablet) {
+        @include font(16px, 24px, 400, $font-submain);
+        max-width: 340px;
+        margin-bottom: 52px;
+    }
+}
+
 .catalog__link {
-    padding-top: 19px;
+    padding-top: 17px;
     @include font(16px, 16px, 400, $font-main);
     text-transform: uppercase;
     color: #000000;
@@ -99,7 +113,7 @@
         position: absolute;
         right: 62px;
         bottom: 80px;
-        left: 477px;
+        left: 446px;
     }
     @include media($desktop) {
         position: static;
@@ -116,9 +130,9 @@
         position: absolute;
         width: 268px;
         height: 200px;
-        top: 92px;
         right: 62px;
         bottom: 80px;
+        left: 4126px;
     }
     @include media($desktop) {
         position: static;

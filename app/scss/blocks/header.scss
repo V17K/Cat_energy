@@ -23,7 +23,7 @@
 }
 
 .header__wrap {
-    padding: 10px 20px 18px;
+    padding: 10px 20px 14px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -118,6 +118,7 @@
     margin-bottom: 20px;
     @include media($tablet) {
         padding-top: 0;
+        margin-bottom: 0;
     }
 }
 
@@ -151,7 +152,7 @@
     margin: 0 auto 29px;
     @include media($tablet) {
         max-width: 414px;
-        margin-left: 118px;
+        margin-left: 100px;
         margin-bottom: 20px;
     }
     @include media($desktop) {

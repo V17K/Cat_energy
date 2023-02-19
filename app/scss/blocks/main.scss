@@ -1,6 +1,10 @@
 .main{
     padding-left: $gatter-X-mobile;
     padding-right: $gatter-X-mobile;
+    @include media($tablet){
+        padding-left: $gatter-X-tablet;
+        padding-right: $gatter-X-tablet;
+    }
     @include media($desktop){
         padding-left: $gatter-X-desktop;
         padding-right: $gatter-X-desktop;
