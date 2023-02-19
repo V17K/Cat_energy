@@ -21,7 +21,18 @@
     @include media($tablet) {
         padding: 73px 61px 59px 53px;
     }
+    @include media($desktop) {
+        padding-top: 42px;
+        padding-left: 52px;
+    }
     
+}
+
+.catalog__item-back{
+    @include media($desktop) {
+        padding-right: 80px;
+        padding-top: 46px;
+    }
 }
 
 .catalog__item-wrap {
@@ -30,6 +41,15 @@
     margin-bottom: 22px;
     @include media($tablet) {
         margin-bottom: 24px;
+    }
+    @include media($desktop) {
+        margin-bottom: 38px;
+    }
+}
+
+.catalog__item-wrap-back{
+    @include media($desktop) {
+        margin-bottom: 43px;
     }
 }
 
@@ -44,6 +64,15 @@
     }
     @include media($tablet) {
         padding-left: 0;
+    }
+    @include media($desktop) {
+        padding-left: 62px;
+    }
+}
+
+.catalog__caption-back{
+    @include media($desktop) {
+        padding-left: 48px;
     }
 }
 
@@ -62,6 +91,7 @@
     @include media($desktop) {
         @include font(16px, 24px, 400, $font-submain);
         max-width: 457px;
+        margin-bottom: 27px;
     }
 }
 
@@ -69,6 +99,10 @@
     @include media($tablet) {
         margin-bottom: 76px;
     }
+    @include media($desktop) {
+        margin-bottom: 33px;
+    }
+
 }
 
 .catalog__descr:last-child{
@@ -86,7 +120,8 @@
     color: #000000;
     text-decoration: none;
     width: 100%;
-    display: block;
+    display: flex;
+    align-items: center;
     border-top: 1px solid #D9D9D9;
     @include media($tablet) {
         border-top: none;
@@ -102,6 +137,9 @@
 
 .catalog__link-pic {
     padding-left: 15px;
+    @include media($tablet){
+        padding-left: 26px;
+    }
 }
 
 .catalog__icon {

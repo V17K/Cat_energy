@@ -34,7 +34,7 @@
     @include media($desktop) {
         padding-left: $gatter-X-desktop;
         padding-right: $gatter-X-desktop;
-        
+        margin-bottom: 104px;
     }
 }
 
@@ -156,7 +156,8 @@
         margin-bottom: 20px;
     }
     @include media($desktop) {
-        margin-left: 200px;
+        margin-left: 169px;
+        margin-bottom: 23px;
     }
 }
 
