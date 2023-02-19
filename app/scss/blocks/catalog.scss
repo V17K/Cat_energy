@@ -16,9 +16,10 @@
 }
 
 .catalog__item {
+    position: relative;
     background-color: $secondary-bg;
     list-style: none;
-    padding: 19px 33px 22px 22px;
+    padding: 30px 33px 22px 22px;
     margin-bottom: 20px;
     @include media($tablet) {
         position: relative;
@@ -30,37 +31,63 @@
     }
 }
 
-.catalog__item-back{
-    margin-bottom: 0;
-    @include media($desktop) {
-        padding-right: 80px;
-        padding-top: 46px;
-    }
-}
-
-.catalog__item-wrap {
-    display: flex;
-    align-items: center;
-    margin-bottom: 22px;
+.catalog__item::after{
+    content: "";
+    background-image: url("../img/cat-slim.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 53px;
+    position: absolute;
+    top: 21px;
+    left: 22px;
+    bottom: 192px;
     @include media($tablet) {
-        margin-bottom: 24px;
+        width: 200px;
+        height: 211px;
+        position: absolute;
+        top: 92px;
+        left: 70%;
+        bottom: 80px;
     }
-    @include media($desktop) {
-        margin-bottom: 38px;
+    @include media ($desktop){
+        background-image: url("../img/cat-slim.svg");
+        width: 100px;
+        height: 100px;
+        top: 47px;
+        left: 52px;
+        bottom: 227px;
     }
 }
 
-.catalog__item-wrap-back{
-    @include media($desktop) {
-        margin-bottom: 43px;
+.catalog__item-back::after{
+    content: "";
+    width: 67px;
+    height: 50px;
+    background-image: url("../img/cat-back.svg");
+    @include media($tablet) {
+        width: 268px;
+        height: 200px;
+        right: 62px;
+        bottom: 80px;
+        left: 60%;
+    }
+    @include media ($desktop){
+        background-image: url("../img/cat-slim.svg");
+        width: 134px;
+        height: 100px;
+        top: 47px;
+        left: 52px;
+        bottom: 227px;
     }
 }
 
 .catalog__caption {
     margin: 0;
+    margin-bottom: 29px;
     @include font(24px, 37px, 400, $font-main);
     text-transform: uppercase;
-    padding-left: 19px;
+    padding-left: 65px;
     @include media($tablet) {
         @include font(36px, 36px, 400, $font-main);
         padding-left: 0;
@@ -69,7 +96,8 @@
         padding-left: 0;
     }
     @include media($desktop) {
-        padding-left: 62px;
+        padding-left: 114px;
+        margin-bottom: 73px;
     }
 }
 
@@ -99,21 +127,10 @@
 }
 
 .catalog__descr-back{
-    @include media($tablet) {
-        margin-bottom: 76px;
-    }
     @include media($desktop) {
         margin-bottom: 33px;
     }
 
-}
-
-.catalog__descr:last-child{
-    @include media($tablet) {
-        @include font(16px, 24px, 400, $font-submain);
-        max-width: 340px;
-        margin-bottom: 52px;
-    }
 }
 
 .catalog__link {

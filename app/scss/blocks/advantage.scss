@@ -10,10 +10,12 @@
 
 .advantage__list {
     padding: 0;
-    margin-top: 0;
+    margin: 0;
+    list-style-type: none;
     @include media($tablet) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 154px;
     }
 }
 
@@ -22,12 +24,25 @@
     align-items: center;
     margin-bottom: 20px;
     @include media($tablet) {
+        position: relative;
         display: block;
     }
 }
 
 .advantage__item:last-child{
     margin-bottom: 49px;
+}
+
+.advantage__item::before{
+    @include media($tablet) {
+        counter-increment: list;
+        content: counter(list);
+        position: absolute;
+        @include font(280px, 280px, 400, $font-main);
+        color: #F2F2F2;
+        right: 0;
+        z-index: -1;
+    }
 }
 
 .advantage__icon{
@@ -42,7 +57,7 @@
     margin: 0;
     padding-left: 20px;
     @include font(14px, 18px, 400, $font-submain);
-    max-width: 200px;
+    max-width: 204px;
     @include media($tablet) {
         padding-left: 0;
         @include font(16px, 24px, 400, $font-submain);
