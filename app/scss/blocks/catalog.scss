@@ -28,6 +28,7 @@
     @include media($desktop) {
         padding-top: 42px;
         padding-left: 52px;
+        margin-bottom: 0;
     }
 }
 
@@ -41,23 +42,25 @@
     position: absolute;
     top: 21px;
     left: 22px;
-    bottom: 192px;
     @include media($tablet) {
         width: 200px;
         height: 211px;
         position: absolute;
         top: 92px;
-        left: 70%;
-        bottom: 80px;
+        right: 62px;
+        left: auto;
     }
     @include media ($desktop){
         background-image: url("../img/cat-slim.svg");
         width: 100px;
-        height: 100px;
+        height: 106px;
         top: 47px;
         left: 52px;
-        bottom: 227px;
     }
+}
+
+.catalog__item-back{
+    margin-bottom: 0;
 }
 
 .catalog__item-back::after{
@@ -68,17 +71,15 @@
     @include media($tablet) {
         width: 268px;
         height: 200px;
-        right: 62px;
-        bottom: 80px;
-        left: 60%;
+        right: 28px;
+        left: auto;
     }
     @include media ($desktop){
-        background-image: url("../img/cat-slim.svg");
+        background-image: url("../img/cat-back.svg");
         width: 134px;
         height: 100px;
         top: 47px;
-        left: 52px;
-        bottom: 227px;
+        left: 33px;
     }
 }
 
@@ -92,18 +93,21 @@
         @include font(36px, 36px, 400, $font-main);
         padding-left: 0;
     }
-    @include media($tablet) {
-        padding-left: 0;
-    }
     @include media($desktop) {
-        padding-left: 114px;
+        text-align: center;
+        padding-top: 40px;
         margin-bottom: 73px;
     }
 }
 
 .catalog__caption-back{
+    padding-left: 85px;
+    @include media($tablet) {
+        padding-left: 0;
+    }
     @include media($desktop) {
-        padding-left: 48px;
+        text-align: center;
+        padding-left: 50px;
     }
 }
 
@@ -113,7 +117,6 @@
     margin-top: 0;
     margin-bottom: 23px;
     max-width: 451px;
-    text-align: justify;
     @include media($tablet) {
         @include font(16px, 24px, 400, $font-submain);
         max-width: 340px;
@@ -162,39 +165,3 @@
     }
 }
 
-.catalog__icon {
-    width: 50px;
-    height: 53px;
-    @include media($tablet) {
-        width: 200px;
-        height: 211px;
-        position: absolute;
-        right: 62px;
-        bottom: 80px;
-        left: 446px;
-    }
-    @include media($desktop) {
-        position: static;
-        width: 100px;
-        height: 106px;
-        order: -1;
-    }
-}
-
-.catalog__icon--back {
-    width: 67px;
-    height: 53px;
-    @include media($tablet) {
-        position: absolute;
-        width: 268px;
-        height: 200px;
-        right: 62px;
-        bottom: 80px;
-        left: 412px;
-    }
-    @include media($desktop) {
-        position: static;
-        width: 134px;
-        height: 100px;
-    }
-}

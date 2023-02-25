@@ -194,6 +194,12 @@
     @include media($tablet) {
         margin-left: 31px;
     }
+    @include media($desktop) {
+        &:hover{
+            opacity: 0.6;
+            transition: opacity 0.2s ease;
+        }
+    }
 }
 
 .header__logo-pic {
