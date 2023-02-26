@@ -9,5 +9,6 @@
     @include media($desktop) {
         padding-left: $gatter-X-desktop;
         padding-right: $gatter-X-desktop;
+        border-bottom: 0;
     }
 }

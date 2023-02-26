@@ -1,0 +1,24 @@
+.copy__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copy__title{
+    @include font(16px, 20px, 400, $font-submain);
+    color: #444444;
+}
+
+.copy__icon{
+    color: #666666;
+    &:active{
+        color: #68B738;
+        opacity: 0.6;
+    }
+    @include media($desktop){
+    &:hover{
+        color: #68B738;
+        cursor: pointer;
+    }
+}
+}

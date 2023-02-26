@@ -1,0 +1,25 @@
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+    padding-bottom: 21px;
+    padding-top: 22px;
+    border-top: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
+    margin-bottom: 20px;
+}
+
+.social__icon{
+    color: #666666;
+    &:active{
+        color: #68B738;
+        opacity: 0.6;
+    }
+    @include media($desktop){
+    &:hover{
+        color: #68B738;
+        cursor: pointer;
+    }
+}
+}
