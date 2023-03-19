@@ -1,6 +1,38 @@
-.slider-pic{
-    width: 100%;
+.slider {
+    width: 280px;
+    height: 256px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.slider__list {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.slider__list::after{
+    content: "";
+    border: 4px solid #666666;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+
+}
+
+.slider__item {
+    width: 50%;
     height: 100%;
-    object-fit: cover;
-    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.slider__item:last-child{
+    width: 50%;
+    left: auto;
+    right: 0;  
+    display: flex;
+    justify-content: flex-end;
 }
