@@ -31,9 +31,10 @@
 .benefits__list{
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 22px;
+    margin-bottom: 26px;
 }
 
 .benefits__item{
@@ -63,6 +64,10 @@
     transform: translateY(calc(50% + 14px));
     background-color: #EAEAEA;
     margin-top: -14px;
+    @include media($tablet) {
+        background-color: #ffffff;
+        max-width: 142px;
+    }
 }
 
 .benefits__subtitle{

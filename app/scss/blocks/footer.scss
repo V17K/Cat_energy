@@ -4,6 +4,12 @@
 
 .footer__wrap{
     padding: 40px 20px 48px;
+    @include media($tablet) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 55px 30px;
+    }
 }
 
 .footer__logo-pic{
@@ -11,5 +17,8 @@
     margin: 0 auto;
     width: 128px;
     height: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
+    @include media($tablet) {
+        margin-bottom: 0;
+    }
 }

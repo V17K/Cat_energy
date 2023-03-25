@@ -15,6 +15,9 @@
         color: #68B738;
         opacity: 0.6;
     }
+    @include media($tablet) {
+        margin-left: 28px;
+    }
     @include media($desktop){
     &:hover{
         color: #68B738;
