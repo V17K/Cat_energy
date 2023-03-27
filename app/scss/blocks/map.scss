@@ -3,6 +3,7 @@
 }
 
 .map__heading{
+    padding: 26px 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     @include media($tablet) {
