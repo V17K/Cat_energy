@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat energy</title>
-    <link rel="preload" href="fonts/Oswald/oswald-regular.ttf?t=1679950852112" as="font" type="font/ttf" crossorigin>
-    <link rel="stylesheet" href="css/main.css?t=1679950852112">
+    <link rel="preload" href="fonts/Oswald/oswald-regular.ttf?t=1680288473454" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="css/main.css?t=1680288473454">
     <svg xmlns="http://www.w3.org/2000/svg" display="none">
         <symbol id="logo-title" viewBox="0 0 101 18">
             <g clip-path="url(#clip0_135_3354)">
@@ -203,32 +203,32 @@
                 <h2 class="advantage__title">Как это работает</h2>
                 <ol class="advantage__list">
                     <li class="advantage__item">
-                        <svg class="advantage__icon">
-                            <use href="#sheet" width="60" height="60" aria-label="Иконка листа" role="img" />
+                        <svg class="advantage__icon" width="60" height="60" aria-label="Иконка листа" role="img" >
+                            <use href="#sheet"/>
                         </svg>
                         <p class="advantage__descr">Функциональное питание содержит только полезные питательные
                             вещества.
                         </p>
                     </li>
                     <li class="advantage__item">
-                        <svg class="advantage__icon">
-                            <use href="#water" width="60" height="60" aria-label="Иконка воды" role="img" />
+                        <svg class="advantage__icon" width="60" height="60" aria-label="Иконка воды" role="img">
+                            <use href="#water"/>
                         </svg>
                         <p class="advantage__descr">Выпускается в виде порошка,
                             который нужно лишь залить
                             кипятком и готово.</p>
                     </li>
-                    <li class="advantage__item">
+                    <li class="advantage__item" width="60" height="60" aria-label="Иконка вилки и ножа" role="img" >
                         <svg class="advantage__icon">
-                            <use href="#eat" width="60" height="60" aria-label="Иконка вилки и ножа" role="img" />
+                            <use href="#eat"/>
                         </svg>
                         <p class="advantage__descr">Замените один-два приема
                             обычной еды на наше
                             функциональное питание.</p>
                     </li>
                     <li class="advantage__item">
-                        <svg class="advantage__icon">
-                            <use href="#clock" width="60" height="60" aria-label="Иконка часов" role="img" />
+                        <svg class="advantage__icon"  width="60" height="60" aria-label="Иконка часов" role="img" >
+                            <use href="#clock"/>
                         </svg>
                         <p class="advantage__descr">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
                         </p>
@@ -241,38 +241,42 @@
             <p class="benefits__descr">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
                 Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
                 спит по 16 часов в день. </p>
-            <ul class="benefits__list">
-                <li class="benefits__item">
-                    <h3 class="benefits__item-title">5кг</h3>
-                    <p class="benefits__item-descr">снижение веса</p>
-                </li>
-                <li class="benefits__item benefits__item-time">
-                    <div class="benefits__heading">
-                        <h3 class="benefits__item-title">60 дней</h3>
-                        <p class="benefits__item-descr">Затрачено времени</p>
-                    </div>
-                </li>
-            </ul>
-            <h3 class="benefits__subtitle">Затраты на питание: 15 000 РУБ. </h3>
-            <div class="slider" style="--cat-width: 50%">
-                <ul class="slider__list">
-                    <li class="slider__item">
-                        <img src="img/cat-fat-2x.png" alt="картинка полного кота" class="slider__pic" width="280"
-                            height="256">
-                    </li>
-                    <li class="slider__item">
-                        <img src="img/cat-slim-2x.png" alt="картинка худого кота" class="slider__pic" width="280"
-                            height="256">
-                    </li>
-                </ul>
-                <div class="slider__range">
-                    <div class="slider__range-round">
-                        <svg class="slider__range-pic" aria-label="Иконка стрелок" width="24" height="18" role="img">
-                            <use href="#triangle" />
-                        </svg>
-                    </div>
+                <div class="benefits__wrap">
+                    <ul class="benefits__list">
+                        <li class="benefits__item">
+                            <h3 class="benefits__item-title">5кг</h3>
+                            <p class="benefits__item-descr">снижение веса</p>
+                        </li>
+                        <li class="benefits__item benefits__item-time">
+                            <div class="benefits__heading">
+                                <h3 class="benefits__item-title">60 дней</h3>
+                                <p class="benefits__item-descr">Затрачено времени</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <h3 class="benefits__subtitle">Затраты на питание: 15 000 РУБ. </h3>
                 </div>
-            </div>
+                <div class="slider">
+                    <div class="slider__wrap" style="--cat-width: 50%">
+                        <ul class="slider__list">
+                            <li class="slider__item">
+                                <img src="img/cat-fat-2x.png" alt="картинка полного кота" class="slider__pic" width="280"
+                                    height="256">
+                            </li>
+                            <li class="slider__item">
+                                <img src="img/cat-slim-2x.png" alt="картинка худого кота" class="slider__pic" width="280"
+                                    height="256">
+                            </li>
+                        </ul>
+                        <div class="slider__range">
+                            <div class="slider__range-round">
+                                <svg class="slider__range-pic" aria-label="Иконка стрелок" width="24" height="18" role="img">
+                                    <use href="#triangle" />
+                                </svg>
+                            </div>
+                        </div>
+                </div>
+                </div>
         </section>
         <section class="map">
             <div class="map__heading">

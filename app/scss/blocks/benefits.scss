@@ -28,6 +28,14 @@
     }
 }
 
+.benefits__wrap{
+    @include media($tablet) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
 .benefits__list{
     margin: 0;
     padding: 0;

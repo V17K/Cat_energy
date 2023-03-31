@@ -30,6 +30,7 @@
         max-width: 160px;
         @include font(16px, 20px, 400, $font-submain);
         text-align: right;
+        margin-left: auto;
     }
 }
 
