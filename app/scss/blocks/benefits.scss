@@ -24,7 +24,7 @@
     @include font(14px, 18px, 400, $font-submain);
     @include media($tablet) {
         @include font(16px, 24px, 400, $font-submain);
-        margin-bottom: 63px;
+        margin-bottom: 54px;
     }
 }
 
@@ -43,6 +43,9 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 22px;
     margin-bottom: 26px;
+    @include media($tablet) {
+        column-gap: 41px;
+    }
 }
 
 .benefits__item{
@@ -51,7 +54,12 @@
     border-radius: 3px;
     padding: 15px 32px;
     text-align: center;
-
+    @include media($tablet) {
+        padding-top: 15px;
+        padding-left: 32px;
+        padding-right: 46px;
+        padding-bottom: 18px;
+    }
 }
 
 .benefits__item-time{
@@ -61,7 +69,10 @@
 .benefits__item-title{
     @include font(24px, 24px, 400, $font-main);
     text-transform: uppercase;
-    margin: 0
+    margin: 0;
+    @include media($tablet) {
+        @include font(30px, 37px, 400, $font-main);
+    }
 }
 
 
@@ -84,4 +95,10 @@
     text-align: center;
     @include font(14px, 20px, 400, $font-main);
     text-transform: uppercase;
+    @include media($tablet) {
+        @include font(20px, 20px, 400, $font-main);
+        margin-bottom: 0;
+        max-width: 174px;
+        text-align: end;
+    }
 }

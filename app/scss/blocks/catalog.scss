@@ -27,6 +27,7 @@
     @include media($tablet) {
         position: relative;
         padding: 73px 61px 59px 53px;
+        margin-bottom: 30px;
     }
     @include media($desktop) {
         padding-top: 42px;
@@ -49,7 +50,7 @@
         width: 200px;
         height: 211px;
         position: absolute;
-        top: 71px;
+        top: 74px;
         right: 62px;
         left: auto;
     }
@@ -65,7 +66,7 @@
 .catalog__item-back {
     margin-bottom: 0;
     @include media($tablet) {
-        padding-top: 89px;
+        padding-top: 77px;
     }
 }
 
@@ -79,7 +80,7 @@
         height: 200px;
         right: 28px;
         left: auto;
-        top: 100px;
+        top: 90px;
     }
     @include media($desktop) {
         background-image: url("../img/cat-back.svg");
@@ -138,7 +139,7 @@
 
 .catalog__descr-back {
     @include media($tablet) {
-        margin-bottom: 74px;
+        margin-bottom: 77px;
     }
 
 }

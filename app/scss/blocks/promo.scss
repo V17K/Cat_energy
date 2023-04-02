@@ -27,7 +27,6 @@
     @include media($tablet) {
         width: 709px;
         height: 609px;
-        margin-left: -31px;
     }
     @include media($desktop) {
         width: 552px;
