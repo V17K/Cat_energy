@@ -1,9 +1,10 @@
 .slider{
     @include media($tablet) {
-        background-color: #EAEAEA;
-        margin-left: -31px;
-        margin-right: -30px;
-        padding-bottom: 101px;
+        background: linear-gradient(
+            #ffffff 151px,
+            #EAEAEA 151px
+        );
+        padding-bottom: 100px;
     }
 }
 
@@ -16,6 +17,10 @@
     @include media($tablet) {
         width: 560px;
         height: 512px;
+        background: linear-gradient(
+            #ffffff 151px,
+            #EAEAEA 151px
+        );
     }
 }
 

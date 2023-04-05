@@ -7,9 +7,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     @include media($tablet) {
-        padding: 56px 70px;
+        padding: 60px 70px;
         justify-content: space-between;
-        border: 2px solid red;
     }
 }
 
@@ -39,6 +38,9 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    @include media($tablet) {
+        height: 400px;
+    }
 }
 
 .map__pic-pin{

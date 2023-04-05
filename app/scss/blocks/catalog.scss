@@ -1,174 +1,177 @@
 .catalog {
-    margin-bottom: 20px;
-    @include media($tablet) {
-        margin-bottom: 45px;
-    }
-    @include media($desktop) {
-        margin-bottom: 71px;
-    }
-}
-
-.catalog__list {
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    @include media($desktop) {
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-.catalog__item {
-    position: relative;
-    background-color: $secondary-bg;
-    list-style: none;
-    padding: 29px 33px 22px 22px;
-    margin-bottom: 20px;
-    @include media($tablet) {
-        position: relative;
-        padding: 73px 61px 59px 53px;
-        margin-bottom: 30px;
-    }
-    @include media($desktop) {
-        padding-top: 42px;
-        padding-left: 52px;
-        margin-bottom: 0;
-    }
-}
-
-.catalog__item::after {
-    content: "";
-    background-image: url("../img/cat-slim.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 50px;
-    height: 53px;
-    position: absolute;
-    top: 21px;
-    left: 22px;
-    @include media($tablet) {
-        width: 200px;
-        height: 211px;
-        position: absolute;
-        top: 74px;
-        right: 62px;
-        left: auto;
-    }
-    @include media($desktop) {
-        background-image: url("../img/cat-slim.svg");
-        width: 100px;
-        height: 106px;
-        top: 47px;
-        left: 52px;
-    }
-}
-
-.catalog__item-back {
-    margin-bottom: 0;
-    @include media($tablet) {
-        padding-top: 77px;
-    }
-}
-
-.catalog__item-back::after {
-    content: "";
-    width: 67px;
-    height: 50px;
-    background-image: url("../img/cat-back.svg");
-    @include media($tablet) {
-        width: 268px;
-        height: 200px;
-        right: 28px;
-        left: auto;
-        top: 90px;
-    }
-    @include media($desktop) {
-        background-image: url("../img/cat-back.svg");
-        width: 134px;
-        height: 100px;
-        top: 47px;
-        left: 33px;
-    }
-}
-
-.catalog__caption {
-    margin: 0 0 29px;
-    @include font(24px, 37px, 400, $font-main);
-    text-transform: uppercase;
-    padding-left: 65px;
-    @include media($tablet) {
-        @include font(36px, 36px, 400, $font-main);
-        padding-left: 0;
-        margin-bottom: 21px;
-    }
-    @include media($desktop) {
-        text-align: center;
-        padding-top: 40px;
-        margin-bottom: 73px;
-    }
-}
-
-.catalog__caption-back {
-    padding-left: 85px;
-    @include media($tablet) {
-        padding-left: 0;
-    }
-    @include media($desktop) {
-        text-align: center;
-        padding-left: 50px;
-    }
-}
-
-.catalog__descr {
-    @include font(14px, 18px, 400, $font-submain);
-    color: #444;
-    margin-top: 0;
-    margin-bottom: 23px;
-    max-width: 451px;
-    @include media($tablet) {
-        @include font(16px, 24px, 400, $font-submain);
-        max-width: 340px;
-        margin-bottom: 52px;
-    }
-    @include media($desktop) {
-        @include font(16px, 24px, 400, $font-submain);
-        max-width: 457px;
-        margin-bottom: 27px;
-    }
-}
-
-.catalog__descr-back {
-    @include media($tablet) {
-        margin-bottom: 77px;
-    }
-
-}
-
-.catalog__link {
-    padding-top: 17px;
-    @include font(16px, 16px, 400, $font-main);
-    text-transform: uppercase;
-    color: #000000;
-    text-decoration: none;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    border-top: 1px solid #D9D9D9;
-    @include media($tablet) {
-        border-top: none;
-        @include font(20px, 30px, 400, $font-main);
-        padding-top: 0;
-    }
-    @include media($desktop) {
-        &:hover {
-            color: rgba(0, 0, 0, 0.1);
+        padding-left: $gatter-X-mobile;
+        padding-right: $gatter-X-mobile;
+        margin-bottom: 20px;
+        @include media($tablet) {
+            padding-left: $gatter-X-tablet;
+            padding-right: $gatter-X-tablet;
+            margin-bottom: 45px;    
         }
     }
-}
 
-.catalog__link-pic {
-    padding-left: 15px;
-    @include media($tablet) {
-        padding-left: 26px;
+    .catalog__list {
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        @include media($desktop) {
+            display: flex;
+            justify-content: space-between;
+        }
     }
-}
+
+    .catalog__item {
+        position: relative;
+        background-color: $secondary-bg;
+        list-style: none;
+        padding: 29px 33px 22px 22px;
+        margin-bottom: 20px;
+        @include media($tablet) {
+            position: relative;
+            padding: 73px 61px 59px 53px;
+            margin-bottom: 30px;
+        }
+        @include media($desktop) {
+            padding-top: 42px;
+            padding-left: 52px;
+            margin-bottom: 0;
+        }
+    }
+
+    .catalog__item::after {
+        content: "";
+        background-image: url("../img/cat-slim.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50px;
+        height: 53px;
+        position: absolute;
+        top: 21px;
+        left: 22px;
+        @include media($tablet) {
+            width: 200px;
+            height: 211px;
+            position: absolute;
+            top: 74px;
+            right: 62px;
+            left: auto;
+        }
+        @include media($desktop) {
+            background-image: url("../img/cat-slim.svg");
+            width: 100px;
+            height: 106px;
+            top: 47px;
+            left: 52px;
+        }
+    }
+
+    .catalog__item-back {
+        margin-bottom: 0;
+        @include media($tablet) {
+            padding-top: 77px;
+        }
+    }
+
+    .catalog__item-back::after {
+        content: "";
+        top: 24px;
+        left: 15px;
+        width: 67px;
+        height: 50px;
+        background-image: url("../img/cat-back.svg");
+        @include media($tablet) {
+            width: 268px;
+            height: 200px;
+            right: 28px;
+            left: auto;
+            top: 90px;
+        }
+        @include media($desktop) {
+            background-image: url("../img/cat-back.svg");
+            width: 134px;
+            height: 100px;
+            top: 47px;
+            left: 33px;
+        }
+    }
+
+    .catalog__caption {
+        margin: 0 0 29px;
+        @include font(24px, 37px, 400, $font-main);
+        text-transform: uppercase;
+        padding-left: 69px;
+        @include media($tablet) {
+            @include font(36px, 36px, 400, $font-main);
+            padding-left: 0;
+            margin-bottom: 21px;
+        }
+        @include media($desktop) {
+            text-align: center;
+            padding-top: 40px;
+            margin-bottom: 73px;
+        }
+    }
+
+    .catalog__caption-back {
+        padding-left: 70px;
+        @include media($tablet) {
+            padding-left: 0;
+        }
+        @include media($desktop) {
+            text-align: center;
+            padding-left: 50px;
+        }
+    }
+
+    .catalog__descr {
+        @include font(14px, 18px, 400, $font-submain);
+        color: #444;
+        margin-top: 0;
+        margin-bottom: 20px;
+        max-width: 451px;
+        @include media($tablet) {
+            @include font(16px, 24px, 400, $font-submain);
+            max-width: 340px;
+            margin-bottom: 52px;
+        }
+        @include media($desktop) {
+            @include font(16px, 24px, 400, $font-submain);
+            max-width: 457px;
+            margin-bottom: 27px;
+        }
+    }
+
+    .catalog__descr-back {
+        margin-bottom: 23px;
+        @include media($tablet) {
+            margin-bottom: 77px;
+        }
+    }
+
+    .catalog__link {
+        padding-top: 19px;
+        @include font(16px, 16px, 400, $font-main);
+        text-transform: uppercase;
+        color: #000000;
+        text-decoration: none;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border-top: 1px solid #D9D9D9;
+        @include media($tablet) {
+            border-top: none;
+            @include font(20px, 30px, 400, $font-main);
+            padding-top: 0;
+        }
+        @include media($desktop) {
+            &:hover {
+                color: rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+
+    .catalog__link-pic {
+        padding-left: 15px;
+        @include media($tablet) {
+            padding-left: 26px;
+        }
+    }

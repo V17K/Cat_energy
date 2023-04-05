@@ -1,3 +1,14 @@
+.advantage {
+    padding-left: $gatter-X-mobile;
+    padding-right: $gatter-X-mobile;
+    margin-bottom: 20px;
+    @include media($tablet) {
+        padding-left: $gatter-X-tablet;
+        padding-right: $gatter-X-tablet;
+        margin: 0;    
+    }
+}
+
 .advantage__title {
     @include font(36px, 40px, 400, $font-main);
     margin-bottom: 40px;
@@ -17,12 +28,12 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 62px;
-        row-gap: 129px;
+        row-gap: 134px;
         margin-bottom: 0;
         padding-bottom: 98px;
     }
     @include media($desktop) {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));        
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
 
@@ -51,7 +62,7 @@
         position: absolute;
         @include font(280px, 200px, 400, $font-main);
         color: #F2F2F2;
-        right: 0;
+        right: 80px;
         top: 0;
         z-index: -1;
     }
@@ -60,10 +71,11 @@
 .advantage__icon {
     width: 60px;
     height: 60px;
+    flex-shrink: 0;
     @include media($tablet) {
         width: 80px;
         height: 80px;
-        margin-bottom: 31px;
+        margin-bottom: 26px;
     }
 }
 
@@ -71,8 +83,8 @@
     margin: 0;
     padding-left: 20px;
     @include font(14px, 18px, 400, $font-submain);
-    max-width: 218px;
     @include media($tablet) {
+        max-width: 218px;
         padding-left: 0;
         @include font(16px, 24px, 400, $font-submain);
     }

@@ -12,6 +12,7 @@
         border-bottom: 0;
         border-top: 0;
         margin-bottom: 0;
+        gap: 0;
     }
 }
 
@@ -20,6 +21,9 @@
     &:active{
         color: #68B738;
         opacity: 0.6;
+    }
+    @include media($tablet) {
+        padding-left: 30px;
     }
     @include media($desktop){
     &:hover{
