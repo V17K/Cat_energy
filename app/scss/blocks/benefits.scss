@@ -25,6 +25,7 @@
         display: flex;justify-content: space-between;
         padding-left: $gatter-X-desktop;
         padding-right: $gatter-X-desktop;
+        padding-bottom: 75px;
     }
 }
 
@@ -80,6 +81,7 @@
     @include media($desktop) {
         padding-left: 0;
         display: block;
+        margin-bottom: 0;
     }
 }
 
@@ -95,7 +97,7 @@
         margin: 0;
     }
     @include media($desktop) {
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
 }
 
@@ -107,6 +109,10 @@
     text-align: center;
     @include media($tablet) {
         padding: 19px ;
+    }
+    @include media($desktop) {
+        padding-top: 14px ;
+        text-align: left;
     }
 }
 
@@ -140,6 +146,9 @@
         padding-top: 3px;
         padding-left: 10px;
         padding-right: 10px;
+    }
+    @include media($desktop) {
+        background-color: transparent;
     }
 }
 
