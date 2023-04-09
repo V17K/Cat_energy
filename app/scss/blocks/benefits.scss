@@ -11,6 +11,27 @@
         padding-top: 48px;
         padding-bottom: 0;
     }
+    @include media($desktop) {
+        padding-top: 15px;
+        background: linear-gradient(
+            #ffffff 163px,
+            #EAEAEA 163px
+        );
+    }
+}
+
+.benefits__container{
+    @include media($desktop) {
+        display: flex;justify-content: space-between;
+        padding-left: $gatter-X-desktop;
+        padding-right: $gatter-X-desktop;
+    }
+}
+
+.benefits__heading{
+    @include media($desktop) {
+        padding-top: 15px;
+    }
 }
 
 .benefits__title {
@@ -23,6 +44,10 @@
         padding-left: $gatter-X-tablet;
         padding-right: $gatter-X-tablet;    
     }
+    @include media($desktop) {
+        padding-left: 0;
+        margin-bottom: 76px;
+    }
 }
 
 .benefits__descr {
@@ -34,6 +59,12 @@
         margin-bottom: 50px;
         padding-left: $gatter-X-tablet;
         padding-right: $gatter-X-tablet;    
+    }   @include media($desktop) {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 70px;
+        margin-bottom: 69px;
+        max-width: 436px;
     }
 }
 
@@ -45,6 +76,10 @@
         margin-bottom: 100px;
         padding-left: $gatter-X-tablet;
         padding-right: $gatter-X-tablet;    
+    }
+    @include media($desktop) {
+        padding-left: 0;
+        display: block;
     }
 }
 
@@ -58,6 +93,9 @@
     @include media($tablet) {
         column-gap: 13px;
         margin: 0;
+    }
+    @include media($desktop) {
+        margin-bottom: 60px;
     }
 }
 
@@ -88,7 +126,6 @@
     }
 }
 
-
 .benefits__item-descr{
     @include font(12px, 12px, 400, $font-submain);
     max-width: 60px;
@@ -117,5 +154,9 @@
         margin-bottom: 0;
         max-width: 174px;
         text-align: right;
+    }
+    @include media($desktop) {
+        max-width: 300px;
+        text-align: justify;
     }
 }

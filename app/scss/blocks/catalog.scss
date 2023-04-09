@@ -7,6 +7,11 @@
             padding-right: $gatter-X-tablet;
             margin-bottom: 45px;    
         }
+        @include media($desktop) {
+            padding-left: $gatter-X-desktop;
+            padding-right: $gatter-X-desktop;
+            margin-bottom: 70px;    
+        }
     }
 
     .catalog__list {
@@ -69,6 +74,9 @@
         @include media($tablet) {
             padding-top: 77px;
         }
+        @include media($desktop) {
+            padding-top: 40px;
+        }
     }
 
     .catalog__item-back::after {
@@ -106,8 +114,9 @@
         }
         @include media($desktop) {
             text-align: center;
-            padding-top: 40px;
+            padding-top: 34px;
             margin-bottom: 73px;
+            padding-left: 30px;
         }
     }
 
@@ -118,7 +127,7 @@
         }
         @include media($desktop) {
             text-align: center;
-            padding-left: 50px;
+            padding-left: 72px;
         }
     }
 
@@ -144,6 +153,9 @@
         margin-bottom: 23px;
         @include media($tablet) {
             margin-bottom: 77px;
+        }
+        @include media($desktop) {
+            margin-bottom: 20px;
         }
     }
 

@@ -7,6 +7,10 @@
         padding-right: $gatter-X-tablet;
         margin: 0;    
     }
+    @include media($desktop) {
+        padding-left: $gatter-X-desktop;
+        padding-right: $gatter-X-desktop;
+    }
 }
 
 .advantage__title {
@@ -30,10 +34,11 @@
         column-gap: 62px;
         row-gap: 134px;
         margin-bottom: 0;
-        padding-bottom: 98px;
+        padding-bottom: 45px;
     }
     @include media($desktop) {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        column-gap: 72px;
     }
 }
 
@@ -66,6 +71,9 @@
         top: 0;
         z-index: -1;
     }
+    @include media($desktop) {
+        right: 0;
+    }
 }
 
 .advantage__icon {
@@ -76,6 +84,10 @@
         width: 80px;
         height: 80px;
         margin-bottom: 26px;
+    }
+    @include media($tablet) {
+        margin-bottom: 30px;
+        padding-left: 5px;
     }
 }
 

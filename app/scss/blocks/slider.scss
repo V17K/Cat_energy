@@ -6,6 +6,10 @@
         );
         padding-bottom: 100px;
     }
+    @include media($desktop) {
+        padding-bottom: 85px;
+        background: none;
+    }
 }
 
 .slider__wrap {
@@ -17,10 +21,8 @@
     @include media($tablet) {
         width: 560px;
         height: 512px;
-        background: linear-gradient(
-            #ffffff 151px,
-            #EAEAEA 151px
-        );
+    }
+    @include media($desktop) {
     }
 }
 

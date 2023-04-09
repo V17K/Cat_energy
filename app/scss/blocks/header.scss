@@ -32,8 +32,8 @@
         margin-bottom: 63px;
     }
     @include media($desktop) {
-        padding-left: $gatter-X-desktop;
-        padding-right: $gatter-X-desktop;
+        padding-left: 80px;
+        padding-right: 120px;
         margin-bottom: 104px;
     }
 }

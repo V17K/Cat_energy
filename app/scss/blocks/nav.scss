@@ -17,8 +17,8 @@
         margin-right: 30px;
     }
     @include media($desktop) {
-        margin-right: 0;
         padding-top: 0;
+        margin-right: -10px;
     }
 }
 
@@ -46,9 +46,10 @@
     @include font(20px, 20px, 500, $font-main);
     white-space: nowrap;
     position: relative;
-    @include media($tablet) {
-        @include font(18px, 24px, 400, $font-main);
+    @include media($desktop) {
+        @include font(20px, 30px, 400, $font-main);
     }
+
 }
 
 .nav__link {

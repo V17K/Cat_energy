@@ -4,4 +4,10 @@
     @include media($tablet){
         margin-left: 12px;
     }
+    @include media($desktop){
+        width: 118px;
+        height: 21px;
+        margin-left: 14px;
+    }
+    
 }
