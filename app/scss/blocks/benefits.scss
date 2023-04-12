@@ -15,12 +15,13 @@
         padding-top: 15px;
         background: linear-gradient(
             #ffffff 163px,
-            #EAEAEA 163px
+            #F2F2F2 163px
         );
     }
 }
 
 .benefits__container{
+    margin: 0;
     @include media($desktop) {
         display: flex;justify-content: space-between;
         padding-left: $gatter-X-desktop;
@@ -29,11 +30,6 @@
     }
 }
 
-.benefits__heading{
-    @include media($desktop) {
-        padding-top: 15px;
-    }
-}
 
 .benefits__title {
     margin-top: 0;
@@ -110,10 +106,6 @@
     @include media($tablet) {
         padding: 19px ;
     }
-    @include media($desktop) {
-        padding-top: 14px ;
-        text-align: left;
-    }
 }
 
 .benefits__item-time{
@@ -148,7 +140,8 @@
         padding-right: 10px;
     }
     @include media($desktop) {
-        background-color: transparent;
+        background-color: #F2F2F2;
+        ;
     }
 }
 
@@ -166,6 +159,6 @@
     }
     @include media($desktop) {
         max-width: 300px;
-        text-align: justify;
+        text-align: left;
     }
 }
