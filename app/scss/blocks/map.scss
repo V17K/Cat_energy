@@ -2,8 +2,11 @@
     position: relative;
 }
 
-.map__container{
-    position: relative;
+.map__container {
+    @include media($desktop) {
+        position: absolute;
+        inset: 0;
+    }
 }
 
 .map__heading {
@@ -12,7 +15,6 @@
     grid-template-columns: repeat(2, 1fr);
     @include media($tablet) {
         padding: 60px 70px;
-        justify-content: space-between;
     }
     @include media($desktop) {
         position: absolute;
@@ -27,6 +29,7 @@
     margin: 0;
     @include font(16px, 20px, 400, $font-main);
     text-transform: uppercase;
+    max-width: 210px;
     @include media($tablet) {
         @include font(20px, 26px, 400, $font-main);
         max-width: 175px;
@@ -37,6 +40,7 @@
 }
 
 .map__descr {
+    max-width: 210px;
     margin: 0;
     @include font(14px, 20px, 400, $font-submain);
     @include media($tablet) {
