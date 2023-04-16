@@ -46,8 +46,16 @@
     @include font(20px, 20px, 500, $font-main);
     white-space: nowrap;
     position: relative;
+    &:active{
+            opacity: 0.1;
+            transition: opacity 0.2s ease;
+    }
     @include media($desktop) {
         @include font(20px, 30px, 400, $font-main);
+        &:hover{
+            opacity: 0.6;
+            transition: opacity 0.2s ease;
+        }
     }
 
 }

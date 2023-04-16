@@ -56,6 +56,7 @@
     @include font(14px, 18px, 400, $font-submain);
     @include media($tablet) {
         @include font(16px, 24px, 400, $font-submain);
+        max-width: 625px;
         margin-bottom: 50px;
         padding-left: $gatter-X-tablet;
         padding-right: $gatter-X-tablet;    
@@ -63,16 +64,16 @@
         padding-left: 0;
         padding-right: 0;
         padding-top: 70px;
-        margin-bottom: 40px;
+        margin-bottom: 68px;
         max-width: 436px;
     }
 }
 
 .benefits__wrap{
     @include media($tablet) {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         align-items: center;
-        justify-content: space-between;
         margin-bottom: 100px;
         padding-left: $gatter-X-tablet;
         padding-right: $gatter-X-tablet;    
@@ -96,7 +97,7 @@
         margin: 0;
     }
     @include media($desktop) {
-        margin-bottom: 40px;
+        margin-bottom: 56px;
     }
 }
 
@@ -107,7 +108,6 @@
     padding: 15px 32px;
     text-align: center;
     @include media($tablet) {
-        padding: 19px ;
     }
 }
 
@@ -157,7 +157,6 @@
     @include media($tablet) {
         @include font(20px, 20px, 400, $font-main);
         margin-bottom: 0;
-        max-width: 174px;
         text-align: right;
     }
     @include media($desktop) {

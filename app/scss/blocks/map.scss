@@ -1,11 +1,14 @@
 .map {
     position: relative;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .map__container {
     @include media($desktop) {
         position: absolute;
         inset: 0;
+        margin: 0;
     }
 }
 
@@ -19,7 +22,7 @@
     @include media($desktop) {
         position: absolute;
         left: 110px;
-        top: 95px;
+        top: 90px;
         background-color: #ffffff;
         padding: 60px 60px 56px 80px;
     }
