@@ -8,7 +8,7 @@
     @include media($desktop) {
         position: absolute;
         inset: 0;
-        margin: 0;
+        margin: 0 auto;
     }
 }
 
