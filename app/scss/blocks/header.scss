@@ -24,9 +24,10 @@
 
 .header__wrap {
     padding: 10px 20px 14px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    justify-content: space-between;
+    gap: 230px;
     @include media($tablet) {
         padding-top: 25px;
         padding-left: 0;
@@ -36,7 +37,6 @@
     }
     @include media($desktop) {
         padding-left: 80px;
-        padding-right: 120px;
         margin-bottom: 104px;
     }
 }
