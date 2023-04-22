@@ -1,7 +1,10 @@
 .map {
     position: relative;
-    display: flex;
-    flex-direction: column-reverse;
+}
+
+.map .container{
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .map__container {
@@ -13,7 +16,10 @@
 }
 
 .map__heading {
-    padding: 26px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 26px;
+    padding-bottom: 5px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     @include media($tablet) {

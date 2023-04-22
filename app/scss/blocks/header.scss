@@ -7,6 +7,12 @@
     }
 }
 
+.header .container{
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
 .header:after{
     @include media($desktop) {
         content: "";
@@ -24,11 +30,10 @@
 
 .header__wrap {
     padding: 10px 20px 14px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 230px;
+    display: flex;
+    align-items: flex-start;
     @include media($tablet) {
+        justify-content: space-between;
         padding-top: 25px;
         padding-left: 0;
         padding-right: 0;
@@ -47,13 +52,13 @@
     flex-grow: 1;
     @include media($tablet) {
         flex-grow: 0;
+        margin-left: 31px;
     }
 }
 
 .header__burger {
     width: 32px;
     height: 32px;
-    margin-left: 2px;
     padding: 0;
     border: 0;
     cursor: pointer;
@@ -194,9 +199,6 @@
     flex-grow: 1;
     display: flex;
     align-items: center;
-    @include media($tablet) {
-        margin-left: 31px;
-    }
     @include media($desktop) {
         &:hover{
             opacity: 0.6;

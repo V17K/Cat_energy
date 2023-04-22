@@ -1,13 +1,9 @@
 .benefits {
     background-color: #EAEAEA;
-    padding-left: $gatter-X-mobile;
-    padding-right: $gatter-X-mobile;
     padding-top: 25px;
     padding-bottom: 40px;
     @include media($tablet) {
         background-color: #ffffff;
-        padding-left: 0;
-        padding-right: 0;
         padding-top: 48px;
         padding-bottom: 0;
     }

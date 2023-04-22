@@ -9,6 +9,7 @@
     opacity: 0;
     visibility: hidden;
     @include media($tablet) {
+        overflow: initial;
         position: static;
         opacity: 1;
         transition: none;
@@ -31,9 +32,11 @@
     margin: 0;
     padding: 0;
     background-color: #fff;
+    justify-content: flex-end;
     @include media($tablet) {
         display: flex;
-        gap: 35px;
+        flex-wrap: wrap;
+        gap: 16px 35px;
     }
     @include media($desktop) {
         background-color: transparent;
