@@ -2,7 +2,7 @@
     --header-bottom-offset: 201px;
     @include media($desktop) {
         position: relative;
-        padding-top:55px;
+        padding-top:52px;
         margin-bottom: 82px;
     }
 }
@@ -11,6 +11,15 @@
     padding-right: 0;
     padding-left: 0;
     margin-bottom: 0;
+    @include media($tablet) {
+        padding-left: $gatter-X-tablet;
+        padding-right: $gatter-X-tablet;
+    }
+    @include media($desktop) {
+        padding-left: $gatter-X-desktop;
+        padding-right: $gatter-X-desktop;
+    }
+
 }
 
 .header:after{
@@ -33,15 +42,14 @@
     display: flex;
     align-items: flex-start;
     @include media($tablet) {
+        padding-top: 2px;
         justify-content: space-between;
-        padding-top: 25px;
         padding-left: 0;
         padding-right: 0;
         padding-bottom: 0;
-        margin-bottom: 63px;
+        margin-bottom: 60px;
     }
     @include media($desktop) {
-        padding-left: 80px;
         margin-bottom: 104px;
     }
 }
@@ -52,7 +60,6 @@
     flex-grow: 1;
     @include media($tablet) {
         flex-grow: 0;
-        margin-left: 31px;
     }
 }
 
@@ -126,6 +133,8 @@
     margin-bottom: 20px;
     @include media($tablet) {
         padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
         margin-bottom: 0;
     }
 }
@@ -138,6 +147,7 @@
     padding-bottom: var(--header-bottom-offset);
     @include media($tablet) {
         background-image: none;
+        margin-left: -11px;
     }
 
 }
@@ -164,8 +174,8 @@
         margin-bottom: 20px;
     }
     @include media($desktop) {
-        margin-left: 169px;
-        margin-bottom: 23px;
+        margin-left: 90px;
+        margin-bottom: 24px;
     }
 }
 

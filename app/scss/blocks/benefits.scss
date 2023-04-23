@@ -21,14 +21,11 @@
     @include media($desktop) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding-left: $gatter-X-desktop;
-        padding-right: $gatter-X-desktop;
         padding-bottom: 75px;
         gap: 200px;
         margin: 0 auto;
     }
 }
-
 
 .benefits__title {
     margin-top: 0;
@@ -37,12 +34,11 @@
     @include media($tablet) {
         @include font(60px, 60px, 400, $font-main);
         margin-bottom: 63px;
-        padding-left: $gatter-X-tablet;
-        padding-right: $gatter-X-tablet;    
     }
     @include media($desktop) {
         padding-left: 0;
         margin-bottom: 76px;
+        padding-top: 10px;
     }
 }
 
@@ -53,9 +49,7 @@
     @include media($tablet) {
         @include font(16px, 24px, 400, $font-submain);
         max-width: 625px;
-        margin-bottom: 50px;
-        padding-left: $gatter-X-tablet;
-        padding-right: $gatter-X-tablet;    
+        margin-bottom: 55px; 
     }   @include media($desktop) {
         padding-left: 0;
         padding-right: 0;
@@ -70,9 +64,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
-        margin-bottom: 100px;
-        padding-left: $gatter-X-tablet;
-        padding-right: $gatter-X-tablet;    
+        margin-bottom: 100px;  
     }
     @include media($desktop) {
         padding-left: 0;
@@ -89,11 +81,11 @@
     column-gap: 22px;
     margin-bottom: 26px;
     @include media($tablet) {
-        column-gap: 13px;
+        column-gap: 55px;
         margin: 0;
     }
     @include media($desktop) {
-        margin-bottom: 56px;
+        margin-bottom: 62px;
     }
 }
 
@@ -101,16 +93,24 @@
     list-style: none;
     border: 1px solid #CDCDCD;
     border-radius: 3px;
-    padding: 15px 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-align: center;
     @include media($tablet) {
+        padding-left: 22px;
+        padding-right: 8px;
     }
 }
 
 .benefits__item-time{
     padding: 15px 21px;
     @include media($tablet) {
-        padding: 18px 17px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
     }
 }
 

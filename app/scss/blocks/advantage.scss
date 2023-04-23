@@ -28,7 +28,7 @@
     @include media($desktop) {
         grid-template-columns: repeat(4, 1fr);
         column-gap: 72px;
-        padding-bottom: 109px;
+        padding-bottom: 27px;
     }
 }
 

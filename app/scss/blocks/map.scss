@@ -23,12 +23,15 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     @include media($tablet) {
-        padding: 60px 70px;
+        padding-top: 60px;
+        padding-bottom: 17px;
+        padding-left: 70px;
+        padding-right: 70px;
     }
     @include media($desktop) {
         position: absolute;
         left: 110px;
-        top: 90px;
+        top: 98px;
         background-color: #ffffff;
         padding: 60px 60px 56px 80px;
     }
