@@ -192,6 +192,14 @@
     }
 }
 
+.header__title--catalog{
+    color: #000000;
+    padding: 27px 42px 39px 20px;
+    margin-bottom: 0;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #ebebeb;
+}
+
 .header__decr {
     @include font(14px, 14px, 400, $font-main);
     color: #fff;
