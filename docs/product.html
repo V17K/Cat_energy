@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог продукции</title>
-    <link rel="preload" href="fonts/Oswald/oswald-regular.ttf?t=1682448987612" as="font" type="font/ttf" crossorigin>
-    <link rel="stylesheet" href="css/main.css?t=1682448987612">
+    <link rel="preload" href="fonts/Oswald/oswald-regular.ttf?t=1682539364831" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="css/main.css?t=1682539364831">
     <svg xmlns="http://www.w3.org/2000/svg" display="none">
         <symbol id="logo-title" viewBox="0 0 101 18">
             <g clip-path="url(#clip0_135_3354)">
@@ -80,8 +80,8 @@
             </ul>
         </div>
     </div>
-
 </div>
+
         <h1 class="header__title header__title--catalog">Каталог продукции</h1>
     </div>
         <section class="product">
@@ -89,7 +89,15 @@
                 <li class="product__item">
                     <a href="#" class="product__link">
                         <div class="product__card">
-                            <img src="img/chiken-small.svg" class= "product__pic" alt="Со вкусом курицы" width="68" height="86">
+                            <picture>
+                                <source srcset="img/chiken-small-desktop.svg" type="image/webp"
+                                    media="(min-width: 1440px)">
+                                <source srcset="img/chiken-small-desktop.svg" type="image/webp"
+                                    media="(min-width: 768px)">
+                                <source srcset="img/chiken-small-mob.svg" type="image/webp"
+                                    media="(min-width: 320px)">
+                                <img src="img/chiken-small.svg" class= "product__pic" alt="Со вкусом курицы" width="68" height="86">   
+                            </picture>
                             <div class="product__heading">
                                 <h2 class="product__title">Cat Energy <span class="product__weight">PRO 500 г</span> </h2>
                                 <ul class="product__info">
@@ -105,7 +113,37 @@
                                 </ul>
                             </div>
                         </div>
-                        <button class="promo__btn btn btn--brand btn--medium-tablet" type="button">Заказать</button>
+                        <button class="btn__book btn btn--brand btn--medium-tablet" type="button">Заказать</button>
+                    </a>
+                </li>
+                <li class="product__item">
+                    <a href="#" class="product__link">
+                        <div class="product__card">
+                            <picture>
+                                <source srcset="img/chiken-large-desktop.svg" type="image/webp"
+                                    media="(min-width: 1440px)">
+                                <source srcset="img/chiken-large-desktop.svg" type="image/webp"
+                                    media="(min-width: 768px)">
+                                <source srcset="img/chiken-large-mob.svg" type="image/webp"
+                                    media="(min-width: 320px)">
+                                <img src="img/chiken-large.svg" class= "product__pic product__pic--large" alt="Со вкусом курицы" width="84" height="100">   
+                            </picture>
+                            <div class="product__heading">
+                                <h2 class="product__title">Cat Energy <span class="product__weight">PRO 500 г</span> </h2>
+                                <ul class="product__info">
+                                    <li class="product__info-item">
+                                        <p class="product__info-descr">Масса <span class="product__value">500г</span></p>
+                                    </li>
+                                    <li class="product__info-item">
+                                        <p class="product__info-descr">Вкус<span class="product__value">Курица</span></p>
+                                    </li>
+                                    <li class="product__info-item">
+                                        <p class="product__info-descr">Цена<span class="product__value">700 Р</span></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="btn__book btn btn--brand btn--medium-tablet" type="button">Заказать</button>
                     </a>
                 </li>
             </ul>

@@ -53,3 +53,7 @@
     }
 }
 
+.btn__book{
+    @include font(16px, 20px, 400, $font-main);
+    width: 100%;
+}
