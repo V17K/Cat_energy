@@ -7,6 +7,7 @@
     @include media($tablet) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        column-gap: 60px;
     }
     @include media($desktop) {
         display: grid;
@@ -15,7 +16,14 @@
 }
 
 .product__item {
-    padding: 19px 20px 25px;
+    padding-top: 19px;
+    padding-bottom: 25px;
+    @include media($tablet) {
+        background: linear-gradient(
+            #ffffff 45px,
+            #f2f2f2 45px
+        );
+}
 }
 
 .product__link {
@@ -31,6 +39,8 @@
     @include media($tablet) {
         flex-direction: column;
         gap: 34px;
+        height: 100%;
+        margin-bottom: 0;
     }
 }
 
@@ -39,6 +49,7 @@
         width: 161px;
         height: 172px;
     }
+    grid-template-columns: re
 }
 
 .product__pic--large{
@@ -71,6 +82,7 @@
 .product__info {
     padding: 0;
     list-style-type: none;
+    width: 140px;
 }
 
 .product__info-item {}
