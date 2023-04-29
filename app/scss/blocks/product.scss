@@ -22,14 +22,28 @@
     padding-bottom: 25px;
     border-bottom: 1px solid #ebebeb;
     @include media($tablet) {
+        padding-top: 0;
         background: linear-gradient(
             #ffffff 45px,
             #f2f2f2 45px
         );
 }
-    padding-top: 0;
 }
 
 .product__link {
     text-decoration: 0;
+}
+
+.product__card--show{
+    position: relative;
+}
+
+.product__card--show::after,
+.product__card--show::before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 25px;
+    border: 2px solid red;
 }

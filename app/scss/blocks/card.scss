@@ -31,6 +31,17 @@
     flex-grow: 1;
 }
 
+.card__heading--show{
+    text-align: center;
+    padding-top: 78px;
+}
+
+.card__descr{
+    @include font(12px, 16px, 400, $font-submain);
+    color: #444444;
+    margin: 0;
+}
+
 .card__weight {
     display: block;
 
