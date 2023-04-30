@@ -1,6 +1,4 @@
-.product {
-    
-}
+.product {}
 
 .product__list {
     padding: 0;
@@ -10,6 +8,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 60px;
+        row-gap: 141px;
     }
     @include media($desktop) {
         display: grid;
@@ -23,27 +22,37 @@
     border-bottom: 1px solid #ebebeb;
     @include media($tablet) {
         padding-top: 0;
-        background: linear-gradient(
-            #ffffff 45px,
-            #f2f2f2 45px
-        );
+        background: linear-gradient(#ffffff 45px, #f2f2f2 45px);
+    }
 }
+
+.product__item--show{
+    @include media($tablet) {
+        background: 0;
+        border: 1px solid #d3d3d3;
+    }
 }
 
 .product__link {
     text-decoration: 0;
 }
 
-.product__card--show{
-    position: relative;
+.product__card--show {
+
 }
 
-.product__card--show::after,
-.product__card--show::before{
-    content: "";
-    position: absolute;
+.product__btn--show {
+    --bt-show: linear-gradient(#d3d3d3, #d3d3d3) no-repeat center center;
     width: 30px;
     height: 30px;
-    top: 25px;
-    border: 2px solid red;
+    position: relative;
+    background: var(--bt-show) / 2px 100%, var(--bt-show) / 100% 2px;
+    margin: 0 auto;
+    margin-bottom: 23px;
+    @include media($tablet) {
+        width: 60px;
+        height: 60px;
+        margin-top: 50px;
+    }
 }
+
