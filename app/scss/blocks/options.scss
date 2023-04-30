@@ -1,0 +1,53 @@
+.options .container{
+    margin-bottom: 0;
+}
+
+.options {
+}
+
+.options__wrap{
+    padding-bottom: 19px;
+    border-bottom: 1px solid #CDCDCD;
+}
+
+.options__title {
+    margin: 0;
+    @include font(24px, 24px, 400, $font-main);
+    margin-bottom: 13px;
+    border-bottom: 1px solid #CDCDCD;
+    padding-bottom: 36px;
+}
+
+.options__list {
+    padding-left: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+.options__item {
+    
+}
+
+.options__subtitle {
+    margin: 0;
+    @include font(16px, 16px, 400, $font-main);
+    text-transform: uppercase;
+    margin-bottom: 13px;
+    
+}
+
+.options_heading {
+    margin-bottom: 15px;
+}
+
+.options_descr {
+    margin: 0;
+    @include font(14px, 14px, 400, $font-submain);
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.options__coin {
+
+}

@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог продукции</title>
-    <link rel="preload" href="fonts/Oswald/oswald-regular.ttf?t=1682851773016" as="font" type="font/ttf" crossorigin>
-    <link rel="stylesheet" href="css/main.css?t=1682851773016">
+    <link rel="preload" href="fonts/Oswald/oswald-regular.ttf?t=1682869768847" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="css/main.css?t=1682869768847">
     <svg xmlns="http://www.w3.org/2000/svg" display="none">
         <symbol id="logo-title" viewBox="0 0 101 18">
             <g clip-path="url(#clip0_135_3354)">
@@ -48,7 +48,8 @@
 <body>
     <div class="header">
         <div class="container">
-                    <div class="header__wrap ">
+                <div class="container">    
+        <div class="header__wrap ">
             <div class="header__wrap-logo">
                 <a href="index.html" class="logo header__logo">
                     <picture>
@@ -126,7 +127,7 @@
                                 <source srcset="img/chiken-large-desktop.png" type="image/png" media="(min-width: 1440px)">
                                 <source srcset="img/chiken-large-desktop.png" type="image/png" media="(min-width: 768px)">
                                 <source srcset="img/chiken-large-mob.png" type="image/png" media="(min-width: 320px)">
-                                <img src="img/chiken-large.jpg" class="card__pic" alt="Со вкусом курицы" width="84" height="100">
+                                <img src="img/chiken-large.jpg" class="card__pic card__pic--large" alt="Со вкусом курицы" width="84" height="100">
                             </picture>
                             <div class="card__heading">
                                 <h2 class="card__title">Cat Energy <span class="card__weight">PRO 1000 г</span>
@@ -149,7 +150,7 @@
                     </a>
                     <button class="btn__book btn btn--brand btn--medium-tablet" type="button">Заказать</button>
                 </li>
-                <li class="product__item product__item--show ">
+                <li class="product__item product__item--show">
                     <a href="#" class="product__link">
                         <div class="product__card product__card--show card">
                             <div class="card__heading card__heading--show">
@@ -165,7 +166,23 @@
             </ul>
         </div>
     </section>
+    <section class="options">
+        <div class="container">
+            <h2 class="options__title">Дополнительные товары</h2>
+            <ul class="options__list">
+                <div class="options__wrap">
+                    <li class="options__item">
+                        <h2 class="options__subtitle">Сахарозаменитель</h2>
+                        <div class="options_heading">
+                            <p class="options_descr">1 упаковка (100г) <span class="options__coin">200 P</span> </p>
+                        </div>
+                    </li>
+                    <button class="btn__book btn btn--brand btn--medium-tablet" type="button">Заказать</button>
+                </div>
+            </ul>
+        </div>
 
+    </section>
 </body>
 <script>
     const nav = document.querySelector(".nav");
