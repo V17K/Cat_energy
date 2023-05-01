@@ -35,7 +35,7 @@
 }
 
 .product__item {
-    padding-top: 19px;
+    padding-top: 25px;
     padding-bottom: 25px;
     border-bottom: 1px solid #ebebeb;
     @include media($tablet) {
@@ -55,7 +55,7 @@
 }
 
 .product__link {
-    text-decoration: 0;
+    text-decoration: none;
 }
 
 .product__card--show {}
@@ -67,6 +67,7 @@
     position: relative;
     background: var(--bt-show) / 2px 100%, var(--bt-show) / 100% 2px;
     margin: 0 auto;
+    margin-bottom: 23px;
     @include media($tablet) {
         width: 60px;
         height: 60px;
