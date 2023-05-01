@@ -41,7 +41,6 @@
 .card__heading--show{
     text-align: center;
     @include media($tablet) {
-        margin-bottom: 87px;
     }
 }
 

@@ -11,6 +11,7 @@
         grid-template-columns: repeat(2, 1fr);
         column-gap: 60px;
         row-gap: 141px;
+        margin-bottom: 68px;
     }
     @include media($desktop) {
         display: grid;
