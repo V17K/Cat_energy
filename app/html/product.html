@@ -47,91 +47,201 @@
 
 <body>
     <div class="header">
-            @@include('blocks/header.html')
+        @@include('blocks/header.html')
         <div class="container">
             <h1 class="header__title header__title--catalog">Каталог продукции</h1>
         </div>
     </div>
-    <section class="product">
+    <section class="Cards">
         <div class="container">
-            <ul class="product__list">
-                <li class="product__item">
-                    <div class="product__wrap">
+            <ul class="products">
+                <li class="products__item">
+                    <div class="product">
                         <a href="#" class="product__link">
-                            <div class="product__card card">
+                            <div class="product__pic">
                                 <picture>
                                     <source srcset="img/chiken-small-desktop.png" type="image/png" media="(min-width: 1440px)">
                                     <source srcset="img/chiken-small-desktop.png" type="image/png" media="(min-width: 768px)">
-                                    <source srcset="img/chiken-small-mob.png" type="image/png" media="(min-width: 320px)">
-                                    <img src="img/chiken-small.jpg" class="card__pic" alt="Со вкусом курицы" width="68" height="86">
+                                    <img src="img/chiken-small-mob.png" alt="Со вкусом курицы" width="68" height="86" media="(min-width: 320px)"> 
                                 </picture>
-                                <div class="card__heading">
-                                    <h2 class="card__title">Cat Energy <span class="card__weight">PRO 500 г</span>
-                                    </h2>
-                                    <ul class="card__info">
-                                        <li class="card__info-item">
-                                            <p class="card__info-descr">Масса <span class="card__value">500 г</span>
-                                            </p>
-                                        </li>
-                                        <li class="card__info__item">
-                                            <p class="card__info-descr">Вкус<span class="card__value">Курица</span>
-                                            </p>
-                                        </li>
-                                        <li class="card__info__item">
-                                            <p class="card__info-descr">Цена<span class="card__value">700 Р</span></p>
-                                        </li>
-                                    </ul>
-                                </div>
+                            </div>
+                            <div class="product__description">
+                                <h2 class="product__title">
+                                    Cat Energy PRO 500 г
+                                </h2>
+                                <dl class="product__info">
+                                    <dt class="product__data-key">Масса</dt>
+                                    <dd class="product__data-value">500 г</dd>
+                                    <dt class="product__data-key">Вкус</dt>
+                                    <dd class="product__data-value">Курица</dd>
+                                    <dt class="product__data-key">Цена</dt>
+                                    <dd class="product__data-value">700 Р</dd>
+                                </dl>
                             </div>
                         </a>
-                        <button class="btn__book btn btn--brand btn--medium-tablet" type="button">Заказать</button>
+                        <button type="button" class="product__btn product__btn btn btn--brand btn__book">заказать</button>
                     </div>
                 </li>
-                <li class="product__item">
-                    <div class="product__wrap">
-                        <a href="#" class="product__link">
-                            <div class="product__card card">
+                <li class="products__item">
+                    <div class="product">
+                        <a href="#" class="product__link product__link--large">
+                            <div class="product__pic product__pic--large">
                                 <picture>
                                     <source srcset="img/chiken-large-desktop.png" type="image/png" media="(min-width: 1440px)">
                                     <source srcset="img/chiken-large-desktop.png" type="image/png" media="(min-width: 768px)">
-                                    <source srcset="img/chiken-large-mob.png" type="image/png" media="(min-width: 320px)">
-                                    <img src="img/chiken-large.jpg" class="card__pic card__pic--large" alt="Со вкусом курицы" width="84" height="100">
+                                    <img src="img/chiken-large-mob.png" alt="Со вкусом курицы" width="84" height="100" media="(min-width: 320px)">
                                 </picture>
-                                <div class="card__heading">
-                                    <h2 class="card__title">Cat Energy <span class="card__weight">PRO 1000 г</span>
-                                    </h2>
-                                    <ul class="card__info">
-                                        <li class="card__info-item">
-                                            <p class="card__info-descr">Масса <span class="card__value">500 г</span>
-                                            </p>
-                                        </li>
-                                        <li class="card__info__item">
-                                            <p class="card__info-descr">Вкус<span class="card__value">Курица</span>
-                                            </p>
-                                        </li>
-                                        <li class="card__info__item">
-                                            <p class="card__info-descr">Цена<span class="card__value">1000 Р</span></p>
-                                        </li>
-                                    </ul>
-                                </div>
+                            </div>
+                            <div class="product__description">
+                                <h2 class="product__title">
+                                    Cat Energy PRO 500 г
+                                </h2>
+                                <dl class="product__info">
+                                    <dt class="product__data-key">Масса</dt>
+                                    <dd class="product__data-value">1000 г</dd>
+                                    <dt class="product__data-key">Вкус</dt>
+                                    <dd class="product__data-value">Курица</dd>
+                                    <dt class="product__data-key">Цена</dt>
+                                    <dd class="product__data-value">1000 Р</dd>
+                                </dl>
                             </div>
                         </a>
-                        <button class="btn__book btn btn--brand btn--medium-tablet" type="button">Заказать</button>
+                        <button type="button" class="product__btn btn btn--brand btn__book">заказать</button>
                     </div>
                 </li>
-                <li class="product__item product__item--show card">
-                    <div class="product__wrap product__wrap--show">
+                <li class="products__item">
+                    <div class="product">
                         <a href="#" class="product__link">
-                            <div class="product__card product__card--show card">
-                                <div class="card__heading card__heading--show">
-                                    <div class="product__btn product__btn--show card__btn">
-                                    </div>
-                                    <h2 class="card__title card__title--show">Показать еще 100500 товаров</h2>
-                                    <p class="card__descr card__descr--show">На самом деле вкусов гораздо больше!</p>
-                                </div>
+                            <div class="product__pic">
+                                <picture>
+                                    <source srcset="img/chiken-small-desktop.png" type="image/png" media="(min-width: 1440px)">
+                                    <source srcset="img/chiken-small-desktop.png" type="image/png" media="(min-width: 768px)">
+                                    <img src="img/chiken-small-mob.png" alt="Со вкусом курицы" width="68" height="86" media="(min-width: 320px)">
+                                </picture>
+                            </div>
+                            <div class="product__description">
+                                <h2 class="product__title">
+                                    Cat Energy PRO 500 г
+                                </h2>
+                                <dl class="product__info">
+                                    <dt class="product__data-key">Масса</dt>
+                                    <dd class="product__data-value">500 г</dd>
+                                    <dt class="product__data-key">Вкус</dt>
+                                    <dd class="product__data-value">Курица</dd>
+                                    <dt class="product__data-key">Цена</dt>
+                                    <dd class="product__data-value">700 Р</dd>
+                                </dl>
                             </div>
                         </a>
-                        <button class="btn__book btn btn--show btn--medium-tablet" type="button">Показать все</button>
+                        <button type="button" class="product__btn product__btn btn btn--brand btn__book">заказать</button>
+                    </div>
+                </li>
+                <li class="products__item">
+                    <div class="product">
+                        <a href="#" class="product__link product__link--large">
+                            <div class="product__pic product__pic--large">
+                                <picture>
+                                    <source srcset="img/chiken-large-desktop.png" type="image/png" media="(min-width: 1440px)">
+                                    <source srcset="img/chiken-large-desktop.png" type="image/png" media="(min-width: 768px)">
+                                    <img src="img/chiken-large-mob.png" alt="Со вкусом курицы" width="84" height="100" media="(min-width: 320px)">
+                                </picture>
+                            </div>
+                            <div class="product__description">
+                                <h2 class="product__title">
+                                    Cat Energy PRO 500 г
+                                </h2>
+                                <dl class="product__info">
+                                    <dt class="product__data-key">Масса</dt>
+                                    <dd class="product__data-value">1000 г</dd>
+                                    <dt class="product__data-key">Вкус</dt>
+                                    <dd class="product__data-value">Курица</dd>
+                                    <dt class="product__data-key">Цена</dt>
+                                    <dd class="product__data-value">1000 Р</dd>
+                                </dl>
+                            </div>
+                        </a>
+                        <button type="button" class="product__btn btn btn--brand btn__book">заказать</button>
+                    </div>
+                </li>
+                <li class="products__item">
+                    <div class="product">
+                        <a href="#" class="product__link">
+                            <div class="product__pic">
+                                <picture>
+                                    <source srcset="img/chiken-small-desktop.png" type="image/png" media="(min-width: 1440px)">
+                                    <source srcset="img/chiken-small-desktop.png" type="image/png" media="(min-width: 768px)">
+                                    <img src="img/chiken-small-mob.png" alt="Со вкусом курицы" width="68" height="86" media="(min-width: 320px)">
+                                </picture>
+                            </div>
+                            <div class="product__description">
+                                <h2 class="product__title">
+                                    Cat Energy PRO 500 г
+                                </h2>
+                                <dl class="product__info">
+                                    <dt class="product__data-key">Масса</dt>
+                                    <dd class="product__data-value">500 г</dd>
+                                    <dt class="product__data-key">Вкус</dt>
+                                    <dd class="product__data-value">Курица</dd>
+                                    <dt class="product__data-key">Цена</dt>
+                                    <dd class="product__data-value">700 Р</dd>
+                                </dl>
+                            </div>
+                        </a>
+                        <button type="button" class="product__btn product__btn btn btn--brand btn__book">заказать</button>
+                    </div>
+                </li>
+                <li class="products__item">
+                    <div class="product">
+                        <a href="#" class="product__link product__link--large">
+                            <div class="product__pic product__pic--large">
+                                <picture>
+                                    <source srcset="img/chiken-large-desktop.png" type="image/png" media="(min-width: 1440px)">
+                                    <source srcset="img/chiken-large-desktop.png" type="image/png" media="(min-width: 768px)">
+                                    <img src="img/chiken-large-mob.png" alt="Со вкусом курицы" width="84" height="100" media="(min-width: 320px)">
+                                </picture>
+                            </div>
+                            <div class="product__description">
+                                <h2 class="product__title">
+                                    Cat Energy PRO 500 г
+                                </h2>
+                                <dl class="product__info">
+                                    <dt class="product__data-key">Масса</dt>
+                                    <dd class="product__data-value">1000 г</dd>
+                                    <dt class="product__data-key">Вкус</dt>
+                                    <dd class="product__data-value">Курица</dd>
+                                    <dt class="product__data-key">Цена</dt>
+                                    <dd class="product__data-value">1000 Р</dd>
+                                </dl>
+                            </div>
+                        </a>
+                        <button type="button" class="product__btn btn btn--brand btn__book">заказать</button>
+                    </div>
+                </li>
+                <li class="products__item">
+                    <div class="product">
+                        <a href="#" class="product__link">
+                            <div class="product__pic">
+                                <picture>
+                                    <source srcset="img/chiken-small-desktop.png" type="image/png" media="(min-width: 1440px)">
+                                    <source srcset="img/chiken-small-desktop.png" type="image/png" media="(min-width: 768px)">
+                                    <img src="img/chiken-small-mob.png" alt="Со вкусом курицы" width="68" height="86" media="(min-width: 320px)">
+                                </picture>
+                            </div>
+                            <div class="product__description">
+                                <h2 class="product__title">
+                                    Cat Energy PRO 500 г
+                                </h2>
+                                <dl class="product__info">
+                                    <dt class="product__data-key">Масса</dt>
+                                    <dd class="product__data-value">500 г</dd>
+                                    <dt class="product__data-key">Вкус</dt>
+                                    <dd class="product__data-value">Курица</dd>
+                                    <dt class="product__data-key">Цена</dt>
+                                    <dd class="product__data-value">700 Р</dd>
+                                </dl>
+                            </div>
+                        </a>
+                        <button type="button" class="product__btn product__btn btn btn--brand btn__book">заказать</button>
                     </div>
                 </li>
             </ul>
@@ -174,3 +284,4 @@
 </script>
 
 </html>
+
