@@ -22,7 +22,7 @@
 
 }
 
-.header:after{
+.header__decor:after{
     @include media($desktop) {
         content: "";
         background-color: #000000;
