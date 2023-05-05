@@ -60,5 +60,15 @@
 
 .btn--show{
     background-color: #F2F2F2;
-
+    @include media($tablet) {
+        margin-right: var(--product-spacing-x);
+        margin-left: var(--product-spacing-x);
+        width: auto;
+    }
+    @include media($desktop){
+        &:hover{
+            background-color: #EBEBEB;
+            color: #444444
+        }   
+    }
 }

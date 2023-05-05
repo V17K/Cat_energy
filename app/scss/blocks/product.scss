@@ -29,6 +29,17 @@
         flex-direction: column;
         background-color: #f2f2f2;
         padding-bottom: 39px;
+        border-bottom: none;
+    }
+}
+
+.product--show {
+    padding-top: 0;
+    @include media($tablet) {
+        height: 100%;
+        background-color: #ffffff;
+        padding: 0;
+        border: 1px solid #D3d3d3;
     }
 }
 
@@ -39,7 +50,6 @@
     column-gap: 36px;
     padding-bottom: 7px;
     &:after {
-        
         position: absolute;
         inset: 0;
     }
@@ -59,7 +69,6 @@
 
 .product__pic {
     margin: 0 auto;
-
     width: 68px;
     height: 86px;
     background-color: red;
@@ -70,6 +79,22 @@
         align-self: flex-end;
         padding-left: 0;
         margin-bottom: 34px;
+    }
+    @include media($desktop) {
+        margin-bottom: 42px;
+    }
+}
+
+.product__pic--show {
+    --box-bg-gradient: linear-gradient(#d3d3d3, #d3d3d3) no-repeat center center;
+    width: 30px;
+    height: 30px;
+    background: var(--box-bg-gradient) / 2px 100%, var(--box-bg-gradient) / 100% 2px;
+    margin: 0 auto 25px;
+    @include media($tablet) {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 49px;
     }
 }
 
@@ -84,13 +109,17 @@
     text-transform: uppercase;
     margin: 0 0 14px;
     padding: 0;
-    padding {
-        margin: 0 auto 34px;
-        max-width: 155px;
+    @include media($tablet) {
+        margin: 0 auto 21px;
         text-align: center;
+        max-width: 125px;
         @include font(20px, 24px, 400, $font-main);
     }
+    @include media($desktop) {
+        @include font(20px, 22px, 400, $font-main);
+    }
 }
+
 
 .product__info {
     display: grid;
@@ -98,6 +127,9 @@
     margin: 0 0 22px;
     @include media($tablet) {
         row-gap: 16px;
+    }
+    @include media($desktop) {
+        margin-bottom: 33px;
     }
 }
 
@@ -139,13 +171,58 @@
         padding-left: 0;
         margin-bottom: 28px;
     }
+    @include media($desktop) {
+        margin-bottom: 46px;
+    }
 }
 
-.product__pic--show {
-    --box-bg-gradient: linear-gradient(black, black) no-repeat center center;
-    width: 30px;
-    height: 30px;
-    border: 1px solid gray;
-    background: var(--box-bg-gradient) / 1px 100%, var(--box-bg-gradient) / 100% 1px;
-}
+.product__link--show {
+    display: block;
+    padding-bottom: 0;
+    @include media($tablet) {
+        display: grid;
+    }
 
+    .product__title--show {
+        max-width: 204px;
+        margin: 0 auto 8px;
+        @include media($tablet) {
+            margin-bottom: 23px;
+        }
+        @include media($desktop) {
+            max-width: 134px;
+            text-align: center;
+        }
+    }
+
+    .products__item--show {
+        padding-top: 23px;
+
+    }
+
+    .product__descr {
+        margin: 0;
+        padding: 0;
+        @include font(12px, 16px, 400, $font-submain);
+        text-align: center;
+        color: #444444;
+        @include media($tablet) {
+            max-width: 165px;
+            margin: 0 auto;
+            line-height: 18px;
+        }
+    }
+
+    .product__description--show {
+        margin-bottom: 21px;
+        @include font(16px, 20px, 400, $font-main);
+        @include media($tablet) {
+            margin-bottom: 83px;
+        }
+        @include media($desktop) {
+            margin-bottom: 75px;
+        }
+    }
+
+
+}
