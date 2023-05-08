@@ -1,9 +1,34 @@
-.options .container {
+.options {
+    position: relative;
+    @include media($desktop) {
+    }
+}
+
+.options__wrap{
+    @include media($desktop) {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        column-gap: 80px;
+    }
+}
+
+.options__container {
     margin-bottom: 0;
+    @include media($desktop) {
+    }
 }
 
 .options__link {
     text-decoration: none;
+    &:after {
+        
+        position: absolute;
+        inset: 0;
+    }
+    @include media($tablet) {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .options__title {
@@ -14,12 +39,24 @@
     @include media($tablet) {
         @include font(36px, 36px, 400, $font-main);
     }
+    @include media($desktop) {
+        @include font(36px, 36px, 400, $font-main);
+        border-bottom: none;
+    }
 }
 
 .options__list {
     padding-left: 0;
     list-style-type: none;
     margin: 0;
+    @include media($tablet) {
+        border-right: 1px solid #CDCDCD; 
+        border-left: 1px solid #CDCDCD; 
+    }
+    @include media($desktop) {
+        border-right: none;
+        border-left: none;
+    }
 }
 
 .options__item {
@@ -27,6 +64,16 @@
     padding-bottom: 19px;
     border-bottom: 1px solid #CDCDCD;
     margin-bottom: 12px;
+    @include media($tablet) {
+        padding: 26px 38px;
+        margin-bottom: 0;
+    }
+    @include media($desktop) {
+        border-bottom: none;
+        border-top: 1px solid #CDCDCD;
+        padding-right: 0;
+        padding-left: 0;
+    }
 }
 
 .options__subtitle {
@@ -34,7 +81,10 @@
     @include font(16px, 16px, 400, $font-main);
     text-transform: uppercase;
     color: #222222;
-
+    @include media($tablet) {
+        margin-bottom: 25px;
+        @include font(20px, 20px, 400, $font-main);
+    }
 }
 
 .options_descr {
@@ -44,11 +94,14 @@
     justify-content: space-between;
     color: #444444;
     margin-bottom: 15px;
-
+    @include media($tablet) {
+        margin-bottom: 25px;
+        @include font(16px, 20px, 400, $font-submain);
+    }
 }
 
 .options__coin {
     @include media($tablet) {
-        margin-left: 49px;
+        margin-left: 55px;
     }
 }

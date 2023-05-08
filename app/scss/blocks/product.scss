@@ -218,7 +218,7 @@
         margin-bottom: 21px;
         @include font(16px, 20px, 400, $font-main);
         @include media($tablet) {
-            margin-bottom: 83px;
+            margin-bottom: 65px;
         }
         @include media($desktop) {
             margin-bottom: 75px;
