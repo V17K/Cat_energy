@@ -49,6 +49,7 @@
     padding-left: 0;
     list-style-type: none;
     margin: 0;
+    margin-bottom: 35px;
     @include media($tablet) {
         border-right: 1px solid #CDCDCD; 
         border-left: 1px solid #CDCDCD; 
@@ -74,6 +75,10 @@
         padding-right: 0;
         padding-left: 0;
     }
+}
+
+.options__item:last-child{
+    margin-bottom: 0;
 }
 
 .options__subtitle {

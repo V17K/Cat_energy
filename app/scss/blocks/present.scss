@@ -1,6 +1,39 @@
-.present{
-    width: 280px;
-    height: 290px;
-    background-color: green;
+.present {
     margin: 0 auto;
+    position: relative;
+}
+
+.present__wrap{
+    position: relative;
+}
+
+.present__wrap::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(104, 183, 56, 0.85);
+}
+
+.present_descr{
+    position: absolute;
+    top: 58px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.present__icon{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+
+.present__title{
+    margin: 0;
+    @include font(16px, 20px, 400, $font-submain);
+    color: #ffffff;
+    text-align: center;
+    padding-left: 58px;
+    padding-right: 61px;
+    
 }
