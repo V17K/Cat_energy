@@ -1,10 +1,9 @@
 .options {
     position: relative;
-    @include media($desktop) {
-    }
+    @include media($desktop) {}
 }
 
-.options__wrap{
+.options__wrap {
     @include media($desktop) {
         display: grid;
         grid-template-columns: 3fr 1fr;
@@ -14,14 +13,13 @@
 
 .options__container {
     margin-bottom: 0;
-    @include media($desktop) {
-    }
+    @include media($desktop) {}
 }
 
 .options__link {
     text-decoration: none;
     &:after {
-        
+
         position: absolute;
         inset: 0;
     }
@@ -35,7 +33,6 @@
     margin: 0;
     @include font(24px, 24px, 400, $font-main);
     padding-bottom: 36px;
-    border-bottom: 1px solid #CDCDCD;
     @include media($tablet) {
         @include font(36px, 36px, 400, $font-main);
     }
@@ -48,11 +45,10 @@
 .options__list {
     padding-left: 0;
     list-style-type: none;
-    margin: 0;
-    margin-bottom: 35px;
+    margin: 0 0 35px;
     @include media($tablet) {
-        border-right: 1px solid #CDCDCD; 
-        border-left: 1px solid #CDCDCD; 
+        border-right: 1px solid #CDCDCD;
+        border-left: 1px solid #CDCDCD;
     }
     @include media($desktop) {
         border-right: none;
@@ -68,17 +64,26 @@
     @include media($tablet) {
         padding: 26px 38px;
         margin-bottom: 0;
+        align-items: center;
     }
     @include media($desktop) {
         border-bottom: none;
         border-top: 1px solid #CDCDCD;
-        padding-right: 0;
-        padding-left: 0;
+        padding: 15px 0 17px;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
     }
 }
 
-.options__item:last-child{
+.options__item:first-child{
+    border-top: 1px solid #CDCDCD;
+}
+
+.options__item:last-child {
     margin-bottom: 0;
+    @include media($desktop) {
+        border-bottom: 1px solid #CDCDCD;
+    }
 }
 
 .options__subtitle {
@@ -90,23 +95,32 @@
         margin-bottom: 25px;
         @include font(20px, 20px, 400, $font-main);
     }
+    @include media($desktop) {
+        margin: 0;
+    }
 }
 
 .options_descr {
-    margin: 0;
+    margin: 0 0 15px;
     @include font(14px, 14px, 400, $font-submain);
     display: flex;
     justify-content: space-between;
     color: #444444;
-    margin-bottom: 15px;
     @include media($tablet) {
         margin-bottom: 25px;
         @include font(16px, 20px, 400, $font-submain);
+    }
+    @include media($desktop) {
+        margin: 0;
+        margin-right: 40px;
     }
 }
 
 .options__coin {
     @include media($tablet) {
         margin-left: 55px;
+    }
+    @include media($desktop) {
+        margin-left: 112px;
     }
 }

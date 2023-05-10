@@ -1,0 +1,25 @@
+.title__decor {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 300px;
+
+}
+
+.title__decor::before,
+.title__decor::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100vw;
+    background-color: green;
+    flex-shrink: 0;
+}
+
+.title__decor::before {
+    display: none;
+    margin-left: -100vw;
+    @include media($tablet) {
+        display: flex;
+    }
+}

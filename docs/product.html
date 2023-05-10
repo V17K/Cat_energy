@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог продукции</title>
-    <link rel="preload" href="fonts/Oswald/oswald-regular.ttf?t=1683636516698" as="font" type="font/ttf" crossorigin>
-    <link rel="stylesheet" href="css/main.css?t=1683636516698">
+    <link rel="preload" href="fonts/Oswald/oswald-regular.ttf?t=1683747687360" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="css/main.css?t=1683747687360">
     <svg xmlns="http://www.w3.org/2000/svg" display="none">
         <symbol id="logo-title" viewBox="0 0 101 18">
             <g clip-path="url(#clip0_135_3354)">
@@ -95,14 +95,16 @@
             <h1 class="header__title header__title--catalog">Каталог продукции</h1>
         </div>
     </div>
-    <section class="Cards">
-        <div class="container">
+    <section class="сards">
+        <div class="container container__products">
             <ul class="products">
                 <li class="products__item">
                     <div class="product">
                         <a href="#" class="product__link">
-                            <div class="product__pic">
-                            </div>
+                                <picture class="product__pic">
+                                    <source srcset="img/chiken-small-desktop.png" type="image/png" media="(min-width: 768px)">
+                                    <img src="img/chiken-small-mob.png" class="product__img" alt="Со вкусом курицы" width="68" height="86">
+                                </picture>
                             <div class="product__description">
                                 <h2 class="product__title">
                                     Cat Energy PRO 500 г
@@ -124,9 +126,10 @@
                 <li class="products__item">
                     <div class="product">
                         <a href="#" class="product__link product__link--large">
-                            <div class="product__pic product__pic--large">
-
-                            </div>
+                            <picture class="product__pic product__pic--large">
+                                <source srcset="img/chiken-large-desktop.png" type="image/png" media="(min-width: 768px)">
+                                <img src="img/chiken-large-mob.png" class="product__img" alt="Со вкусом курицы" width="84" height="100">
+                            </picture>
                             <div class="product__description">
                                 <h2 class="product__title">
                                     Cat Energy PRO 500 г
@@ -147,8 +150,10 @@
                 <li class="products__item">
                     <div class="product">
                         <a href="#" class="product__link">
-                            <div class="product__pic">
-                            </div>
+                                <picture class="product__pic">
+                                    <source srcset="img/chiken-small-desktop.png" type="image/png" media="(min-width: 768px)">
+                                    <img src="img/chiken-small-mob.png" class="product__img" alt="Со вкусом курицы" width="68" height="86">
+                                </picture>
                             <div class="product__description">
                                 <h2 class="product__title">
                                     Cat Energy PRO 500 г
@@ -170,8 +175,10 @@
                 <li class="products__item">
                     <div class="product">
                         <a href="#" class="product__link product__link--large">
-                            <div class="product__pic product__pic--large">
-                            </div>
+                            <picture class="product__pic product__pic--large">
+                                <source srcset="img/chiken-large-desktop.png" type="image/png" media="(min-width: 768px)">
+                                <img src="img/chiken-large-mob.png" class="product__img" alt="Со вкусом курицы" width="84" height="100">
+                            </picture>
                             <div class="product__description">
                                 <h2 class="product__title">
                                     Cat Energy PRO 500 г
@@ -192,8 +199,10 @@
                 <li class="products__item">
                     <div class="product">
                         <a href="#" class="product__link">
-                            <div class="product__pic">
-                            </div>
+                                <picture class="product__pic">
+                                    <source srcset="img/chiken-small-desktop.png" type="image/png" media="(min-width: 768px)">
+                                    <img src="img/chiken-small-mob.png" class="product__img" alt="Со вкусом курицы" width="68" height="86">
+                                </picture>
                             <div class="product__description">
                                 <h2 class="product__title">
                                     Cat Energy PRO 500 г
@@ -215,8 +224,10 @@
                 <li class="products__item">
                     <div class="product">
                         <a href="#" class="product__link product__link--large">
-                            <div class="product__pic product__pic--large">
-                            </div>
+                            <picture class="product__pic product__pic--large">
+                                <source srcset="img/chiken-large-desktop.png" type="image/png" media="(min-width: 768px)">
+                                <img src="img/chiken-large-mob.png" class="product__img" alt="Со вкусом курицы" width="84" height="100">
+                            </picture>
                             <div class="product__description">
                                 <h2 class="product__title">
                                     Cat Energy PRO 500 г
@@ -237,8 +248,10 @@
                 <li class="products__item">
                     <div class="product">
                         <a href="#" class="product__link">
-                            <div class="product__pic">
-                            </div>
+                                <picture class="product__pic">
+                                    <source srcset="img/chiken-small-desktop.png" type="image/png" media="(min-width: 768px)">
+                                    <img src="img/chiken-small-mob.png" class="product__img" alt="Со вкусом курицы" width="68" height="86">
+                                </picture>
                             <div class="product__description">
                                 <h2 class="product__title">
                                     Cat Energy PRO 500 г
@@ -270,7 +283,7 @@
                                 </p>
                             </div>
                         </a>
-                        <button type="button" class="btn--show product__btn btn btn__book">Показать все</button>
+                        <button type="button" class="btn__show product__btn btn btn__book">Показать все</button>
                     </div>
                 </li>
             </ul>
@@ -278,7 +291,7 @@
     </section>
     <section class="options">
         <div class="container options__container">
-            <h2 class="options__title">Дополнительные товары</h2>
+            <h2 class="options__title title__decor container__decor">Дополнительные товары</h2>
             <div class="options__wrap">
                 <ul class="options__list">
                     <li class="options__item">
