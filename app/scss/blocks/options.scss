@@ -1,6 +1,9 @@
 .options {
     position: relative;
-    @include media($desktop) {}
+    overflow-x: hidden;
+    @include media($tablet) {
+        margin-bottom: 100px;
+    }
 }
 
 .options__wrap {
@@ -49,10 +52,12 @@
     @include media($tablet) {
         border-right: 1px solid #CDCDCD;
         border-left: 1px solid #CDCDCD;
+        margin-bottom: 71px;
     }
     @include media($desktop) {
         border-right: none;
         border-left: none;
+        margin-bottom: 0;
     }
 }
 

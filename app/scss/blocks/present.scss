@@ -5,13 +5,24 @@
 
 .present__wrap{
     position: relative;
-}
-
-.present__wrap::after {
-    content: "";
-    position: absolute;
-    inset: 0;
+    isolation: isolate;
+    @include present-bg('../img/cat-backpack-desktop.png');
+    background-clip: content-box;
+    height: 290px;
+    width: 100%;
     background-color: rgba(104, 183, 56, 0.85);
+    background-position: center center;
+    @include media($tablet) {
+        @include present-bg('../img/cat-backpack-tablet.png');
+        width: 100%;
+        height: 200px;
+    }
+    @include media($desktop) {
+        @include present-bg('../img/cat-backpack-desktop.png');
+        background-color: rgba(104, 183, 56, 0.85);
+        width: 280px;
+        height: 290px;
+    }
 }
 
 .present_descr{
@@ -20,20 +31,43 @@
     right: 0;
     left: 0;
     bottom: 0;
+    @include media($tablet) {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        top: 0;
+        margin: 0 auto;
+    }
+    @include media($desktop) {
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 46px;
+    }
 }
 
 .present__icon{
     display: block;
     margin: 0 auto;
     margin-bottom: 48px;
+    @include media($tablet) {
+        margin: 0;
+    }
 }
 
 .present__title{
-    margin: 0;
+    margin: 0 auto;
     @include font(16px, 20px, 400, $font-submain);
     color: #ffffff;
     text-align: center;
     padding-left: 58px;
     padding-right: 61px;
-    
+    max-width: 160px;
+    @include media($tablet) {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+    @include media($tablet) {
+        text-align: center;
+    }
 }

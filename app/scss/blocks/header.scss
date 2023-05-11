@@ -63,6 +63,12 @@
     }
 }
 
+.header__wrap--catalog{
+    @include media($desktop) {
+        margin-bottom: 69px;
+    }
+}
+
 .header__burger {
     width: 32px;
     height: 32px;
@@ -149,7 +155,6 @@
         background-image: none;
         margin-left: -11px;
     }
-
 }
 
 .header__promo {
@@ -202,6 +207,10 @@
         @include font(60px, 60px, 400, $font-main);
         border: 0;
         margin-bottom: 90px;
+    }
+    @include media($desktop) {
+        padding: 0;
+        margin-bottom: 147px;
     }
 }
 
