@@ -16,17 +16,12 @@
 }
 
 .map__heading {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 26px;
-    padding-bottom: 5px;
+    padding: 26px 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
     @include media($tablet) {
-        padding-top: 60px;
-        padding-bottom: 17px;
-        padding-left: 70px;
-        padding-right: 70px;
+        padding: 60px 70px;
     }
     @include media($desktop) {
         position: absolute;
@@ -41,7 +36,7 @@
     margin: 0;
     @include font(16px, 20px, 400, $font-main);
     text-transform: uppercase;
-    max-width: 210px;
+    max-width: 140px;
     @include media($tablet) {
         @include font(20px, 26px, 400, $font-main);
         max-width: 175px;
@@ -52,9 +47,10 @@
 }
 
 .map__descr {
-    max-width: 210px;
-    margin: 0;
     @include font(14px, 20px, 400, $font-submain);
+    max-width: 140px;
+    margin: 0;
+    margin-left: auto;
     @include media($tablet) {
         max-width: 160px;
         @include font(16px, 20px, 400, $font-submain);
@@ -101,5 +97,12 @@
     @include media($tablet) {
         width: 113px;
         height: 106px;
+    }
+}
+
+.map__products{
+    background-color: #F2f2f2;
+    @include media($desktop) {
+        background-color: #ffffff;
     }
 }

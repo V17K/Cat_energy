@@ -1,5 +1,8 @@
 .advantage {
     margin-bottom: 20px;
+    @include media($tablet) {
+        border-bottom: 1px solid #E6E6E6;
+    }
 }
 
 .advantage__title {
@@ -23,7 +26,7 @@
         column-gap: 62px;
         row-gap: 134px;
         margin-bottom: 0;
-        padding-bottom: 45px;
+        padding-bottom: 102px;
     }
     @include media($desktop) {
         grid-template-columns: repeat(4, 1fr);
@@ -75,10 +78,7 @@
     @include media($tablet) {
         width: 80px;
         height: 80px;
-        margin-bottom: 26px;
-    }
-    @include media($tablet) {
-        margin-bottom: 30px;
+        margin-bottom: 27px;
         padding-left: 5px;
     }
 }
