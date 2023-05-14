@@ -1,0 +1,36 @@
+.field {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    column-gap: 13px;
+    padding-bottom: 15px;
+}
+
+.field__label {
+    @include font(16px, 18px, 400, $font-main);
+    text-transform: uppercase;
+    color: #444444;
+}
+
+.field__data {
+    width: 100%;
+
+}
+
+.field__input{
+    @include font(16px, 18px, 400, $font-main);
+    text-transform: uppercase;
+    padding: 14px 0 13px 20px;
+    border: 1px solid #E7e7e7;
+    border-radius: none;
+    @include media($desktop){
+        &:hover{
+            border: 1px solid #CDCDCD;
+        }
+}
+}
+
+
+.field__input--error{
+    border: 2px solid #FF8282;
+}

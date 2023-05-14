@@ -1,0 +1,23 @@
+.form {
+
+}
+
+.form__field {
+
+}
+
+.form__information {
+
+}
+
+.form__information--wrap{
+    padding-left: $gatter-X-mobile;
+    padding-right: $gatter-X-mobile;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.form__title{
+    @include font(24px, 26px, 400, $font-main);
+    margin-bottom: 35px;
+    padding-top: 26px;
+}
