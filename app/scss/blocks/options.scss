@@ -22,13 +22,17 @@
 .options__link {
     text-decoration: none;
     &:after {
-
         position: absolute;
         inset: 0;
     }
     @include media($tablet) {
         display: flex;
         justify-content: space-between;
+    }
+    @include media($desktop) {
+        flex-grow: 1;
+        justify-content: flex-start;
+        align-items: center;
     }
 }
 
@@ -74,13 +78,12 @@
     @include media($desktop) {
         border-bottom: none;
         border-top: 1px solid #CDCDCD;
-        padding: 15px 0 17px;
-        display: grid;
-        grid-template-columns: 3fr 1fr;
+        padding: 16px 0 17px;
+        display: flex;
     }
 }
 
-.options__item:first-child{
+.options__item:first-child {
     border-top: 1px solid #CDCDCD;
 }
 
@@ -102,30 +105,41 @@
     }
     @include media($desktop) {
         margin: 0;
+        width: 325px;
     }
 }
 
 .options_descr {
-    margin: 0 0 15px;
     @include font(14px, 14px, 400, $font-submain);
     display: flex;
     justify-content: space-between;
     color: #444444;
     @include media($tablet) {
-        margin-bottom: 25px;
         @include font(16px, 20px, 400, $font-submain);
     }
     @include media($desktop) {
+        flex-grow: 1;
         margin: 0;
-        margin-right: 40px;
+        max-width: 240px;
     }
 }
 
 .options__coin {
+    @include font(14px, 14px, 400, $font-submain);
+    color: #444444;
+    margin: 0;
     @include media($tablet) {
-        margin-left: 55px;
+        @include font(16px, 20px, 400, $font-submain);
     }
     @include media($desktop) {
-        margin-left: 112px;
+        width: 80px;
+        text-align: right;
+        margin-left: auto;
+        flex-shrink: 0;
+        padding-right: 40px;
     }
+}
+
+.options__caption {
+    flex-shrink: 0;
 }

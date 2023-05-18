@@ -1,11 +1,4 @@
 .present {
-    margin: 0 auto;
-    position: relative;
-}
-
-.present__wrap{
-    position: relative;
-    isolation: isolate;
     @include present-bg('../img/cat-backpack-desktop.png');
     background-clip: content-box;
     height: 290px;
@@ -25,32 +18,11 @@
     }
 }
 
-.present_descr{
-    position: absolute;
-    top: 58px;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    @include media($tablet) {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        top: 0;
-        margin: 0 auto;
-    }
-    @include media($desktop) {
-        flex-direction: column;
-        justify-content: center;
-        row-gap: 46px;
-    }
-}
-
 .present__icon{
     display: block;
     margin: 0 auto;
-    margin-bottom: 48px;
-    @include media($tablet) {
-        margin: 0;
+    @include media($desktop) {
+        
     }
 }
 
@@ -63,7 +35,6 @@
     padding-right: 61px;
     max-width: 160px;
     @include media($tablet) {
-        margin: 0;
         padding: 0;
         text-align: left;
     }

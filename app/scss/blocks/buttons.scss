@@ -73,6 +73,7 @@
     @include font(16px, 20px, 400, $font-main);
     width: 100%;
     @include media($desktop) {
-        padding: 7px 26px;
+        padding: 9px 26px;
+        width: 224px;
 }
 }
