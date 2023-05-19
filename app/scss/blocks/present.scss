@@ -1,26 +1,23 @@
 .present {
     @include present-bg('../img/cat-backpack-desktop.png');
-    background-clip: content-box;
-    height: 290px;
-    width: 100%;
     background-color: rgba(104, 183, 56, 0.85);
     background-position: center center;
     @include media($tablet) {
         @include present-bg('../img/cat-backpack-tablet.png');
-        width: 100%;
-        height: 200px;
+        display: flex;
+        align-items: center;
     }
     @include media($desktop) {
         @include present-bg('../img/cat-backpack-desktop.png');
         background-color: rgba(104, 183, 56, 0.85);
-        width: 280px;
-        height: 290px;
+        display: block;
     }
 }
 
 .present__icon{
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 48px;
+    padding-top: 59px;
     @include media($desktop) {
         
     }
@@ -31,9 +28,8 @@
     @include font(16px, 20px, 400, $font-submain);
     color: #ffffff;
     text-align: center;
-    padding-left: 58px;
-    padding-right: 61px;
     max-width: 160px;
+    padding-bottom: 43px;
     @include media($tablet) {
         padding: 0;
         text-align: left;

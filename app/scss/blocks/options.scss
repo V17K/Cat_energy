@@ -109,13 +109,23 @@
     }
 }
 
-.options_descr {
-    @include font(14px, 14px, 400, $font-submain);
+.options__description{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 15px;
+    @include media($desktop) {
+        margin-bottom: 0;
+        flex-grow: 1;
+    }
+}
+
+.options__weight {
+    @include font(14px, 14px, 400, $font-submain);
     color: #444444;
+    margin: 0;
     @include media($tablet) {
         @include font(16px, 20px, 400, $font-submain);
+        margin-right: 46px;
     }
     @include media($desktop) {
         flex-grow: 1;
