@@ -99,3 +99,9 @@
         padding-bottom: 6px;
     }
 }
+
+.nav__link-product--current{
+    @include media($tablet) {
+        border-bottom-color: #68B738;
+    }
+}

@@ -18,9 +18,12 @@
 }
 
 .field__input{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
     @include font(16px, 18px, 400, $font-main);
     text-transform: uppercase;
-    padding: 14px 0 13px 20px;
+    padding: 14px 18px 13px 20px;
     border: 1px solid #E7e7e7;
     border-radius: none;
     @include media($desktop){
