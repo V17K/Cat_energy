@@ -1,13 +1,9 @@
-.form {
-
+.form__field{
+    margin-bottom: 32px;
 }
 
-.form__field {
-
-}
-
-.form__information {
-
+.form__about{
+    margin-bottom: 23px;
 }
 
 .form__information--wrap{
@@ -21,3 +17,16 @@
     margin-bottom: 35px;
     padding-top: 26px;
 }
+
+.form__title--about{
+    padding-top:0;
+    margin-bottom: 37px;
+    margin-top: 0;
+}
+
+.form__title--contact{
+    padding-top: 0;
+    margin-bottom: 35px;
+    margin-top: 0;
+}
+

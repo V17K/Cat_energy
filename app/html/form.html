@@ -139,7 +139,8 @@
                             <a href="product.html" class="nav__link nav__link--product ">Каталог продукции</a>
                         </li>
                         <li class="nav__item">
-                            <a href="form.html" class="nav__link nav__link--product nav__link-product--current">Подбор программы</a>
+                            <a href="form.html" class="nav__link nav__link--product nav__link-product--current">Подбор
+                                программы</a>
                         </li>
                     </ul>
                 </div>
@@ -173,14 +174,14 @@
                         <div class="field">
                             <label for="fname" class="field__label">вес (кг):*</label>
                             <div class="field__data">
-                                <input type="text" id="name" name="name" placeholder="Введите вес"
+                                <input type="text" id="weight" name="weight" placeholder="Введите вес"
                                     class="field__input"></input>
                             </div>
                         </div>
                         <div class="field">
                             <label for="fname" class="field__label">возраст(лет):</label>
                             <div class="field__data">
-                                <input type="text" id="name" name="name" placeholder="Введите возраст"
+                                <input type="text" id="age" name="age" placeholder="Введите возраст"
                                     class="field__input field__input--error"></input>
                             </div>
                         </div>
@@ -211,22 +212,56 @@
             <div class="form__field">
                 <div class="form__contact">
                     <div class="form__contact--wrap">
-                        <div class="form__title ">Контактные данные (владельца кота)</div>
+                        <h3 class="form__title form__title--contact">Контактные данные (владельца кота)</h3>
                         <div class="field">
                             <label for="fname" class="field__label">E-mail:*</label>
                             <div class="field__data">
-                                <input type="email" id="email" name="email" placeholder="kuklachev@gmail.com"
+                                <input type="text" id="email" name="email" placeholder="kuklachev@gmail.com"
                                     class="field__input"></input>
                             </div>
                         </div>
                         <div class="field">
                             <label for="fname" class="field__label">Телефон:*</label>
                             <div class="field__data">
-                                <input type="phone" id="phone" name="phone" placeholder="8 (960) 900-60-90"
+                                <input type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90"
                                     class="field__input"></input>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="form__about">
+                    <h3 class="form__title form__title--about">Комментарий</h3>
+                    <div class="field field--about">
+                        <textarea name="about" id="about" class="field__input field__input--area"
+                            placeholder="Расскажите обо всех повАдках кота"></textarea>
+                    </div>
+                </div>
+                <div class="form__apps">
+                    <h3 class="form__title form__title--about">Дополнительно:</h3>
+                        <div class="apps">
+                            <label for="sugar" class="app app--inline">
+                                <input type="checkbox" class="app__origin" id="sugar">
+                                <span class="app__psevdo"></span>
+                                <span class="app__label">Сахарозаменитель</span>
+                            </label>
+                            <label for="steel-water" class="app app--inline">
+                                <input type="checkbox" class="app__origin" id="steel-water">
+                                <span class="app__psevdo"></span>
+                                <span class="app__label">Питьевая вода</span>
+                            </label>
+                            <label for="milk" class="app app--inline">
+                                <input type="checkbox" class="app__origin" id="milk">
+                                <span class="app__psevdo"></span>
+                                <span class="app__label">Молоко</span>
+                            </label>
+                            <label for="vitamins" class="app app--inline">
+                                <input type="checkbox" class="app__origin" id="vitamins">
+                                <span class="app__psevdo"></span>
+                                <span class="app__label">Витамины</span>
+                            </label>
+                        </div>
+                        <button type="button" class="product__btn product__btn btn btn--brand btn__book btn__send">Отправить заявку</button>
+                        <p class="app__descr">* — Обязательные поля</p>
                 </div>
             </div>
         </div>

@@ -23,9 +23,13 @@
     width: 100%;
     @include font(16px, 18px, 400, $font-main);
     text-transform: uppercase;
-    padding: 14px 18px 13px 20px;
+    padding: 9px 12px 13px 20px;
     border: 1px solid #E7e7e7;
     border-radius: none;
+    &::placeholder{
+        color: #444444;
+        opacity: 1;
+    }
     @include media($desktop){
         &:hover{
             border: 1px solid #CDCDCD;
@@ -33,7 +37,26 @@
 }
 }
 
-
 .field__input--error{
     border: 2px solid #FF8282;
+}
+
+.field--about{
+    display: block;
+    padding-bottom: 0;
+}
+
+.field__input--area{
+    padding: 9px 12px 0 15px;
+    height: 150px;
+    resize: none;
+    width: 100%;
+    box-sizing: border-box;
+    @include media($tablet){
+        height: 160px;
+    }
+    &::placeholder{
+        color: #444444;
+        opacity: 1;
+    }
 }
