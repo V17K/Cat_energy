@@ -17,7 +17,7 @@
 
 }
 
-.field__input{
+.field__input {
     box-sizing: border-box;
     display: block;
     width: 100%;
@@ -25,37 +25,46 @@
     text-transform: uppercase;
     padding: 9px 12px 13px 20px;
     border: 1px solid #E7e7e7;
-    border-radius: none;
-    &::placeholder{
-        color: #444444;
-        opacity: 1;
-    }
-    @include media($desktop){
-        &:hover{
+    border-radius: 0;
+    outline: 0;
+    @include media($desktop) {
+        &:hover {
             border: 1px solid #CDCDCD;
         }
-}
-}
-
-.field__input--error{
-    border: 2px solid #FF8282;
+    }
 }
 
-.field--about{
+.field__input::placeholder {
+    color: #444444;
+    opacity: 1;
+    border-radius: 0;
+}
+
+.field__input--error {
+    box-shadow: 0 0 0 2px #FF8282;
+    border-radius: 0;
+}
+
+.field__input:focus-visible{
+    box-shadow: 0 0 0 2px #444444;
+    border-radius: 0;
+}
+
+.field--about {
     display: block;
     padding-bottom: 0;
 }
 
-.field__input--area{
+.field__input--area {
     padding: 9px 12px 0 15px;
     height: 150px;
     resize: none;
     width: 100%;
     box-sizing: border-box;
-    @include media($tablet){
+    @include media($tablet) {
         height: 160px;
     }
-    &::placeholder{
+    &::placeholder {
         color: #444444;
         opacity: 1;
     }
