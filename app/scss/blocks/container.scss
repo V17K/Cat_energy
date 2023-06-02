@@ -1,4 +1,4 @@
-.container{
+.container {
     max-width: 1480px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -10,32 +10,32 @@
     }
     @include media($desktop) {
         padding-left: $gatter-X-desktop;
-        padding-right: $gatter-X-desktop; 
+        padding-right: $gatter-X-desktop;
     }
 
 }
 
-.container__products{
+.container__products {
     padding-left: 0;
     padding-right: 0;
     @include media($tablet) {
         padding-left: $gatter-X-tablet;
         padding-right: $gatter-X-tablet;
-        margin-bottom: 45px;    
+        margin-bottom: 45px;
     }
     @include media($desktop) {
         padding-left: $gatter-X-desktop;
-        padding-right: $gatter-X-desktop; 
+        padding-right: $gatter-X-desktop;
     }
 }
 
-.container__decor{
-        max-width: 320px;
-        margin: 0 auto;
-        box-sizing: border-box;
+.container__decor {
+    max-width: 320px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
-.container__form{
+.container__form {
     padding-left: 0;
     padding-right: 0;
 }

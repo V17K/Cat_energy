@@ -1,3 +1,20 @@
+.header__container{
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    max-width: 1480px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    @include media($tablet) {
+        padding-left: $gatter-X-tablet;
+        padding-right: $gatter-X-tablet;
+    }
+    @include media($desktop) {
+        padding-left: $gatter-X-desktop;
+        padding-right: $gatter-X-desktop;
+    }
+}
+
 .header {
     --header-bottom-offset: 201px;
     @include media($desktop) {
@@ -7,24 +24,7 @@
     }
 }
 
-.header__form{
 
-}
-
-.header__container{
-    padding-right: 0;
-    padding-left: 0;
-    margin-bottom: 0;
-    @include media($tablet) {
-        padding-left: $gatter-X-tablet;
-        padding-right: $gatter-X-tablet;
-    }
-    @include media($desktop) {
-        padding-left: $gatter-X-desktop;
-        padding-right: $gatter-X-desktop;
-    }
-
-}
 
 .header__decor:after{
     @include media($desktop) {
