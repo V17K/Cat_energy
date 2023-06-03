@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat energy</title>
-    <link rel="preload" href="fonts/Oswald/oswald-regular.ttf?t=1685738106990" as="font" type="font/ttf" crossorigin>
-    <link rel="stylesheet" href="css/main.css?t=1685738106990">
+    <link rel="preload" href="fonts/Oswald/oswald-regular.ttf?t=1685805939708" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="css/main.css?t=1685805939708">
     <svg xmlns="http://www.w3.org/2000/svg" display="none">
         <symbol id="logo-title" viewBox="0 0 101 18">
             <g clip-path="url(#clip0_135_3354)">
@@ -109,6 +109,13 @@
                 <path d="M8 0L0 9L8 18V0Z" fill="currentColor" />
                 <path d="M24 9L16 0V18L24 9Z" fill="currentColor" />
             </symbol>
+            <symbol id="email" viewBox="0 0 20 20">
+                <path d="M1.5 8.5V16.5H18.5V8.5M1.5 3.5H18.5V5.5L10 11.5L1.5 5.5V3.5Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+            </symbol>
+            <symbol id="phone" viewBox="0 0 20 20">
+                <path d="M10 10H18.5M18.5 10L16 7.5M18.5 10L16 12.5M8.5 2.5V7.5H5.5V12.5H8.5V17.5H6C4.5 17.5 3.5 16.5 3.5 15V5C3.5 3.5 4.5 2.5 6 2.5H8.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+            </symbol>
+            
     </svg>
 </head>
 
@@ -182,7 +189,7 @@
                         </div>
                         <div class="field">
                             <label for="fname" class="field__label">возраст(лет):</label>
-                            <div class="field__data">
+                            <div class="field__data field__data--error">
                                 <input type="text" id="age" name="age" placeholder="Введите возраст"
                                     class="field__input field__input--error"></input>
                             </div>
@@ -220,6 +227,9 @@
                             <div class="field__data">
                                 <input type="text" id="email" name="email" placeholder="kuklachev@gmail.com"
                                     class="field__input"></input>
+                                    <svg class="field__icon" width="20" height="20" aria-hidden="true" focusable="false">
+                                        <use href="#email" />
+                                    </svg>
                             </div>
                         </div>
                         <div class="field">
@@ -227,6 +237,9 @@
                             <div class="field__data">
                                 <input type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90"
                                     class="field__input"></input>
+                                    <svg class="field__icon" width="20" height="20" aria-hidden="true" focusable="false">
+                                        <use href="#phone" />
+                                    </svg>
                             </div>
                         </div>
                     </div>

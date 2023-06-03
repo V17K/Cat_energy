@@ -14,7 +14,16 @@
 
 .field__data {
     width: 100%;
-
+    display: flex;
+    align-items: center;
+    border: 1px solid #E7e7e7;
+    box-sizing: border-box;
+    padding: 9px 12px 13px 20px;
+    @include media($desktop) {
+        &:hover {
+            border: 1px solid #CDCDCD;
+        }
+    }
 }
 
 .field__input {
@@ -23,15 +32,10 @@
     width: 100%;
     @include font(16px, 18px, 400, $font-main);
     text-transform: uppercase;
-    padding: 9px 12px 13px 20px;
-    border: 1px solid #E7e7e7;
     border-radius: 0;
     outline: 0;
-    @include media($desktop) {
-        &:hover {
-            border: 1px solid #CDCDCD;
-        }
-    }
+    border: 0;
+    flex-shrink: 1;
 }
 
 .field__input::placeholder {
@@ -40,19 +44,23 @@
     border-radius: 0;
 }
 
-.field__input--error {
+.field__data--error {
     box-shadow: 0 0 0 2px #FF8282;
     border-radius: 0;
 }
 
-.field__input:focus-visible{
+.field__data:focus-visible{
     box-shadow: 0 0 0 2px #444444;
     border-radius: 0;
+}
+
+.field__icon{
 }
 
 .field--about {
     display: block;
     padding-bottom: 0;
+    border: 1px solid #E7e7e7;
 }
 
 .field__input--area {
