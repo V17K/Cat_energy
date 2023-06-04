@@ -9,6 +9,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         padding: 0 26px;
+        border-bottom: none;
     }
     @include media($desktop) {
         padding: 0;
@@ -17,6 +18,11 @@
 .target__wrap {
     padding-left: $gatter-X-mobile;
     padding-right: $gatter-X-mobile;
+    @include media($tablet) {
+        border: 1px solid #e7e7e7;
+        margin-bottom: 75px;
+        padding: 25px;
+    }
 }
 
 .target__label{
@@ -77,12 +83,12 @@
     padding-bottom: 19px;
     @include media($tablet) {
         max-width: 280px;
-        margin: 0 auto;
         width: 300px;
     }
     &:last-child{
         padding-bottom: 0;
     }
+
 }
 
 

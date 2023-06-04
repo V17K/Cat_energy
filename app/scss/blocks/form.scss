@@ -10,6 +10,11 @@
     padding-left: $gatter-X-mobile;
     padding-right: $gatter-X-mobile;
     border-bottom: 1px solid #d9d9d9;
+    @include media($tablet) {
+        padding-left: $gatter-X-tablet;
+        border-bottom: 0;
+        margin-bottom: 72px;
+    }
 }
 
 .form__title{

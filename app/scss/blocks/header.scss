@@ -187,6 +187,9 @@
 .header__heading--form{
     max-width: none;
     margin-bottom: 39px;
+    @include media($tablet) {
+        margin-left: 69px;
+    }
 }
 
 .header__title {
@@ -236,6 +239,9 @@
     color: #000000;
     margin-bottom: 37px;
     text-align: left;
+    @include media($tablet) {
+        margin-bottom: 54px;
+    }
 }
 
 .header__decr--form{
@@ -243,6 +249,11 @@
     text-align: left;
     line-height: 18px;
     max-width: 226px;
+    @include media($tablet) {
+        line-height: 30px;
+        max-width: 323px;
+        font-size: 20px;
+    }
 }
 
 .header__logo {
