@@ -1,17 +1,25 @@
-.apps{
+.apps {
     margin-bottom: 34px;
+    @include media($tablet) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 54px;
+    }
+    @include media($desktop) {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .app {
     display: flex;
     align-items: center;
     padding-bottom: 16px;
-    @include media($desktop) {
-        padding-bottom: 0;
+    @include media($tablet) {
+        padding-bottom: 32px;
     }
 }
 
-.app:last-child{
+.app:last-child {
     padding-bottom: 0;
 }
 
@@ -64,13 +72,22 @@
     overflow: hidden;
 }
 
-.app__label{
+.app__label {
     @include font(16px, 18px, 400, $font-main);
     text-transform: uppercase;
     color: #000000;
+    @include media($tablet) {
+        @include font(20px, 30px, 400, $font-main);
+    }
 }
 
-.app__descr{
+.app__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.app__descr {
     @include font(14px, 16px, 400, $font-submain);
     color: #000000;
     margin: 0;

@@ -1,9 +1,25 @@
 .form__field{
     margin-bottom: 32px;
+    @include media($tablet) {
+        margin-bottom: 0;
+    }
 }
 
 .form__about{
     margin-bottom: 23px;
+    @include media($tablet) {
+        margin-bottom: 65px;
+    }
+}
+
+.form__apps{
+    margin-bottom: 72px;
+}
+
+.form__contact{
+    @include media($tablet) {
+        margin-bottom: 65px;
+    }
 }
 
 .form__information--wrap{
@@ -21,17 +37,27 @@
     @include font(24px, 26px, 400, $font-main);
     margin-bottom: 35px;
     padding-top: 26px;
+    @include media($tablet) {
+        @include font(36px, 36px, 400, $font-main);
+    }
 }
 
 .form__title--about{
     padding-top:0;
     margin-bottom: 37px;
     margin-top: 0;
+    @include media($tablet) {
+        margin-bottom: 76px;
+    }
 }
 
 .form__title--contact{
     padding-top: 0;
     margin-bottom: 35px;
     margin-top: 0;
+    @include media($tablet) {
+        margin-bottom: 76px;
+        flex-shrink: 0;
+    }
 }
 
