@@ -82,9 +82,11 @@
 }
 
 .app__heading {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    @include media($tablet) {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
 }
 
 .app__descr {
