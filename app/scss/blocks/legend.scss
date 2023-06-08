@@ -1,0 +1,12 @@
+.legend{
+    @include font(24px, 26px, 400, $font-main);
+    color: #000000;
+    flex-shrink: 0;
+    @include media($tablet) {
+        @include font(36px, 36px, 400, $font-main);
+    }
+}
+
+.legend--contact{
+    margin-bottom: 38px;
+}

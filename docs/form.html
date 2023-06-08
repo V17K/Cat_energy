@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat energy</title>
-    <link rel="preload" href="fonts/Oswald/oswald-regular.ttf?t=1686165162193" as="font" type="font/ttf" crossorigin>
-    <link rel="stylesheet" href="css/main.css?t=1686165162193">
+    <link rel="preload" href="fonts/Oswald/oswald-regular.ttf?t=1686253201712" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="css/main.css?t=1686253201712">
     <svg xmlns="http://www.w3.org/2000/svg" display="none">
         <symbol id="logo-title" viewBox="0 0 101 18">
             <g clip-path="url(#clip0_135_3354)">
@@ -122,9 +122,7 @@
 </head>
 
 <body class="body">
-    
         <div class="container">
-            <div class="header"></div>
             <div class="header header__form">
                 <div class="header__wrap">
                     <div class="header__wrap-logo">
@@ -175,61 +173,63 @@
             <form action="#" class="form">
                 <div class="container container__form">
                     <div class="form__field">
-                        <div class="form__information">
-                            <div class="form__information--wrap">
+                        <fieldset class="fieldset fieldset__form">
+                            <div class="fieldset__wrap">
                                 <div class="field">
                                     <label for="fname" class="field__label">Имя:*</label>
                                     <div class="field__data">
-                                        <input type="text" id="name" name="name" placeholder="Введите имя"
+                                        <input type="text" id="fname" name="fname" placeholder="Введите имя"
                                             class="field__input"></input>
                                     </div>
                                 </div>
                                 <div class="field">
-                                    <label for="age" class="field__label">вес (кг):*</label>
+                                    <label for="weight" class="field__label">вес (кг):*</label>
                                     <div class="field__data">
                                         <input type="text" id="weight" name="weight" placeholder="Введите вес"
                                             class="field__input"></input>
                                     </div>
                                 </div>
-                                <div class="field">
-                                    <label for="age" id="age" class="field__label">возраст(лет):</label>
+                                <div class="field field--bottom">
+                                    <label for="age" class="field__label">возраст(лет):</label>
                                     <div class="field__data field__data--error">
                                         <input type="text" id="age" name="age" placeholder="Введите возраст"
                                             class="field__input field__input--error"></input>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="target">
-                            <div class="target__wrap">
-                                <label for="plus" class="target--inline">
-                                    <input type="radio" id="plus" class="target__origin" name="group">
-                                    <span class="target__psevdo"></span>
-                                    <span class="target__label">Похудение</span>
-                                </label>
-                                <label for="plus-1" class="target--inline">
-                                    <input type="radio" id="plus-1" class="target__origin" name="group">
-                                    <span class="target__psevdo"></span>
-                                    <span class="target__label">Набор массы</span>
-                                </label>
-                                <label for="plus-2" class="target--inline">
-                                    <input type="radio" id="plus-2" class="target__origin" name="group">
-                                    <span class="target__psevdo"></span>
-                                    <span class="target__label">Не знаю (нужен ваш совет)</span>
-                                </label>
+                        </fieldset>
+                        <fieldset class="fieldset fieldset__target">
+                            <div class="target">
+                                <div class="target__wrap">
+                                    <label for="plus" class="target--inline">
+                                        <input type="radio" id="plus" class="target__origin" name="group">
+                                        <span class="target__psevdo"></span>
+                                        <span class="target__label">Похудение</span>
+                                    </label>
+                                    <label for="plus-1" class="target--inline">
+                                        <input type="radio" id="plus-1" class="target__origin" name="group">
+                                        <span class="target__psevdo"></span>
+                                        <span class="target__label">Набор массы</span>
+                                    </label>
+                                    <label for="plus-2" class="target--inline">
+                                        <input type="radio" id="plus-2" class="target__origin" name="group">
+                                        <span class="target__psevdo"></span>
+                                        <span class="target__label">Не знаю (нужен ваш совет)</span>
+                                    </label>
+                                </div>
                             </div>
-                        </div>
+                        </fieldset>
                     </div>
                 </div>
                 <div class="container">
                     <div class="form__field">
                         <div class="form__contact">
-                            <div class="form__contact--wrap">
-                                <h3 class="form__title form__title--contact title__decor">Контактные данные (владельца кота)</h3>
+                            <fieldset class="fieldset contact__fieldset">
+                                <legend class="legend legend--contact title__decor">Контактные данные (владельца кота)</legend>
                                 <div class="field">
-                                    <label for="fname" class="field__label">E-mail:*</label>
+                                    <label for="email" class="field__label">E-mail:*</label>
                                     <div class="field__data">
-                                        <input type="text" id="email" name="email" placeholder="kuklachev@gmail.com"
+                                        <input type="email" id="email" name="email" placeholder="kuklachev@gmail.com"
                                             class="field__input"></input>
                                         <svg class="field__icon" width="20" height="20" aria-hidden="true"
                                             focusable="false">
@@ -237,10 +237,10 @@
                                         </svg>
                                     </div>
                                 </div>
-                                <div class="field">
-                                    <label for="fname" class="field__label">Телефон:*</label>
+                                <div class="field field--bottom">
+                                    <label for="phone" class="field__label">Телефон:*</label>
                                     <div class="field__data">
-                                        <input type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90"
+                                        <input type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90"
                                             class="field__input"></input>
                                         <svg class="field__icon" width="20" height="20" aria-hidden="true"
                                             focusable="false">
@@ -248,7 +248,7 @@
                                         </svg>
                                     </div>
                                 </div>
-                            </div>
+                            </fieldset>
                         </div>
                         <div class="form__about">
                             <h3 class="form__title form__title--about title__decor">Комментарий</h3>
