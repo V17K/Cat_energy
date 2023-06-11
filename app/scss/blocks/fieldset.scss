@@ -4,18 +4,35 @@
     margin: 0;
 }
 
-.fieldset__form{
-    
-}
-
 .fieldset__wrap{
     padding-left: $gatter-X-mobile;
     padding-right: $gatter-X-mobile;
     border-bottom: 1px solid #d9d9d9;
-    padding-bottom: 24px;
+    padding-bottom: 27px;
     @include media($tablet) {
         padding-left: $gatter-X-tablet;
         border-bottom: 0;
         margin-bottom: 72px;
     }
+}
+
+.fieldset__container{
+    padding-left: $gatter-X-mobile;
+    padding-right: $gatter-X-mobile;
+}
+
+.fieldset__form{
+    margin-bottom: 21px;
+}
+
+.fieldset__target{
+    margin-bottom: 26px;
+}
+
+.fieldset__contact{
+    margin-bottom: 24px;
+}
+
+.fieldset__area{
+    margin-bottom: 23px;
 }

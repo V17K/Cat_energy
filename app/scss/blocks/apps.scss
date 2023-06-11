@@ -13,7 +13,7 @@
 .app {
     display: flex;
     align-items: center;
-    padding-bottom: 16px;
+    padding-bottom: 12px;
     @include media($tablet) {
         padding-bottom: 32px;
     }
@@ -37,9 +37,14 @@
     height: 30px;
     position: relative;
     flex-shrink: 0;
-    background-color: #f2f2f2;
+    border: 1px solid #CDCDCD;
     position: relative;
     margin-right: 16px;
+    @include media($desktop) {
+        &:hover{
+            border-color: #BABABA;
+        }
+    }
 }
 
 .app__psevdo:after {

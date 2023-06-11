@@ -239,6 +239,7 @@
     color: #000000;
     margin-bottom: 37px;
     text-align: left;
+    padding-top: 27px;
     @include media($tablet) {
         margin-bottom: 54px;
     }
@@ -287,4 +288,8 @@
 
 .header__form{
     padding-top: 0;
+}
+
+.header__wrap--form{
+    border-bottom: 1px solid #D9D9D9;
 }

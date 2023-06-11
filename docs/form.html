@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat energy</title>
-    <link rel="preload" href="fonts/Oswald/oswald-regular.ttf?t=1686253201712" as="font" type="font/ttf" crossorigin>
-    <link rel="stylesheet" href="css/main.css?t=1686253201712">
+    <link rel="preload" href="fonts/Oswald/oswald-regular.ttf?t=1686464121687" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="css/main.css?t=1686464121687">
     <svg xmlns="http://www.w3.org/2000/svg" display="none">
         <symbol id="logo-title" viewBox="0 0 101 18">
             <g clip-path="url(#clip0_135_3354)">
@@ -110,7 +110,8 @@
                 <path d="M24 9L16 0V18L24 9Z" fill="currentColor" />
             </symbol>
             <symbol id="email" viewBox="0 0 20 20">
-                <path d="M1.5 8.5V16.5H18.5V8.5M1.5 3.5H18.5V5.5L10 11.5L1.5 5.5V3.5Z" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1.5 8.5V16.5H18.5V8.5M1.5 3.5H18.5V5.5L10 11.5L1.5 5.5V3.5Z" stroke="currentColor" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round" />
             </symbol>
             <symbol id="phone" viewBox="0 0 20 20">
                 <path
@@ -122,175 +123,162 @@
 </head>
 
 <body class="body">
-        <div class="container">
-            <div class="header header__form">
-                <div class="header__wrap">
-                    <div class="header__wrap-logo">
-                        <a href="index.html" class="logo header__logo">
-                            <picture>
-                                <source srcset="img/logo-desktop.svg" type="image/svg+xml" media="(min-width: 1440px)">
-                                <source srcset="img/logo-tablet.svg" type="image/svg+xml" media="(min-width: 768px)">
-                                <source srcset="img/logo-mobile.svg" type="image/svg+xml" media="(min-width: 320px)">
-                                <img srcset="img/logo-mobile.svg" alt="На главную" width="33" height="38"
-                                    class="header__logo-pic">
-                            </picture>
-                            <svg class="logo__title-icon" width="101" height="18" aria-hidden="true" focusable="false">
-                                <use href="#logo-title" />
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="nav">
-                        <ul class="nav__list">
-                            <li class="nav__item">
-                                <a href="index.html" class="nav__link nav__link--product">Главная</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="product.html" class="nav__link nav__link--product ">Каталог продукции</a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="form.html"
-                                    class="nav__link nav__link--product nav__link-product--current">Подбор
-                                    программы</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <button type="button" aria-label="открыть меню" class="header__burger">
-                        <span class="header__burger-line"></span>
-                    </button>
+        <div class="header header__form">
+            <div class="header__wrap header__wrap--form">
+                <div class="header__wrap-logo">
+                    <a href="index.html" class="logo header__logo">
+                        <picture>
+                            <source srcset="img/logo-desktop.svg" type="image/svg+xml" media="(min-width: 1440px)">
+                            <source srcset="img/logo-tablet.svg" type="image/svg+xml" media="(min-width: 768px)">
+                            <source srcset="img/logo-mobile.svg" type="image/svg+xml" media="(min-width: 320px)">
+                            <img srcset="img/logo-mobile.svg" alt="На главную" width="33" height="38"
+                                class="header__logo-pic">
+                        </picture>
+                        <svg class="logo__title-icon" width="101" height="18" aria-hidden="true" focusable="false">
+                            <use href="#logo-title" />
+                        </svg>
+                    </a>
                 </div>
-                <div class="header__content header__content--form">
-                    <div class="header__heading header__heading--form">
-                        <h1 class="header__title header__title--form">Подбор программы</h1>
-                        <p class="header__decr header__decr--form">Заполните анкету, и мы подберем
-                            программу питания для вашего кота</p>
-                    </div>
+                <div class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link nav__link--product">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="product.html" class="nav__link nav__link--product ">Каталог продукции</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="form.html" class="nav__link nav__link--product nav__link-product--current">Подбор
+                                программы</a>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" aria-label="открыть меню" class="header__burger">
+                    <span class="header__burger-line"></span>
+                </button>
+            </div>
+            <div class="header__content header__content--form container">
+                <div class="header__heading header__heading--form">
+                    <h1 class="header__title header__title--form">Подбор программы</h1>
+                    <p class="header__decr header__decr--form">Заполните анкету, и мы подберем
+                        программу питания для вашего кота</p>
                 </div>
             </div>
-        </header>
         </div>
-        
-        <main class="main">
-            <form action="#" class="form">
-                <div class="container container__form">
-                    <div class="form__field">
-                        <fieldset class="fieldset fieldset__form">
-                            <div class="fieldset__wrap">
-                                <div class="field">
-                                    <label for="fname" class="field__label">Имя:*</label>
-                                    <div class="field__data">
-                                        <input type="text" id="fname" name="fname" placeholder="Введите имя"
-                                            class="field__input"></input>
-                                    </div>
-                                </div>
-                                <div class="field">
-                                    <label for="weight" class="field__label">вес (кг):*</label>
-                                    <div class="field__data">
-                                        <input type="text" id="weight" name="weight" placeholder="Введите вес"
-                                            class="field__input"></input>
-                                    </div>
-                                </div>
-                                <div class="field field--bottom">
-                                    <label for="age" class="field__label">возраст(лет):</label>
-                                    <div class="field__data field__data--error">
-                                        <input type="text" id="age" name="age" placeholder="Введите возраст"
-                                            class="field__input field__input--error"></input>
-                                    </div>
+    <main class="main">
+        <form action="#" class="form">
+            <div class="container container__form">
+                <div class="form__field">
+                    <fieldset class="fieldset fieldset__form">
+                        <div class="fieldset__wrap">
+                            <div class="field">
+                                <label for="fname" class="field__label">Имя:*</label>
+                                <div class="field__data">
+                                    <input type="text" id="fname" name="fname" placeholder="Введите имя"
+                                        class="field__input"></input>
                                 </div>
                             </div>
-                        </fieldset>
-                        <fieldset class="fieldset fieldset__target">
-                            <div class="target">
-                                <div class="target__wrap">
-                                    <label for="plus" class="target--inline">
-                                        <input type="radio" id="plus" class="target__origin" name="group">
-                                        <span class="target__psevdo"></span>
-                                        <span class="target__label">Похудение</span>
-                                    </label>
-                                    <label for="plus-1" class="target--inline">
-                                        <input type="radio" id="plus-1" class="target__origin" name="group">
-                                        <span class="target__psevdo"></span>
-                                        <span class="target__label">Набор массы</span>
-                                    </label>
-                                    <label for="plus-2" class="target--inline">
-                                        <input type="radio" id="plus-2" class="target__origin" name="group">
-                                        <span class="target__psevdo"></span>
-                                        <span class="target__label">Не знаю (нужен ваш совет)</span>
-                                    </label>
+                            <div class="field">
+                                <label for="weight" class="field__label">вес (кг):*</label>
+                                <div class="field__data">
+                                    <input type="text" id="weight" name="weight" placeholder="Введите вес"
+                                        class="field__input"></input>
                                 </div>
                             </div>
-                        </fieldset>
-                    </div>
+                            <div class="field field--bottom">
+                                <label for="age" class="field__label">возраст(лет):</label>
+                                <div class="field__data field__data--error">
+                                    <input type="text" id="age" name="age" placeholder="Введите возраст"
+                                        class="field__input field__input--error"></input>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldset fieldset__target">
+                        <div class="target">
+                            <div class="target__wrap">
+                                <label for="plus" class="target--inline disabled">
+                                    <input type="radio" id="plus" class="target__origin" name="group">
+                                    <span class="target__psevdo"></span>
+                                    <span class="target__label">Похудение</span>
+                                </label>
+                                <label for="plus-1" class="target--inline">
+                                    <input type="radio" id="plus-1" class="target__origin" name="group">
+                                    <span class="target__psevdo"></span>
+                                    <span class="target__label">Набор массы</span>
+                                </label>
+                                <label for="plus-2" class="target--inline">
+                                    <input type="radio" id="plus-2" class="target__origin" name="group">
+                                    <span class="target__psevdo"></span>
+                                    <span class="target__label">Не знаю (нужен ваш совет)</span>
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldset fieldset__contact fieldset__container">
+                        <legend class="legend legend--contact title__decor">Контактные данные <br> (владельца кота)</legend>
+                        <div class="field">
+                            <label for="email" class="field__label">E-mail:*</label>
+                            <div class="field__data">
+                                <input type="email" id="email" name="email" placeholder="kuklachev@gmail.com"
+                                    class="field__input"></input>
+                                <svg class="field__icon" width="20" height="20" aria-hidden="true" focusable="false">
+                                    <use href="#email" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="field field--bottom">
+                            <label for="phone" class="field__label">Телефон:*</label>
+                            <div class="field__data">
+                                <input type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90"
+                                    class="field__input"></input>
+                                <svg class="field__icon" width="20" height="20" aria-hidden="true" focusable="false">
+                                    <use href="#phone" />
+                                </svg>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldset fieldset__area fieldset__container">
+                        <legend class="legend legend--area title__decor">Комментарий</legend>
+                        <div class="field__data field__data--area">
+                            <textarea name="about" id="about" class="field__input field__input--area"
+                                placeholder="Расскажите обо всех повАдках кота"></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldset fieldset__apps fieldset__container">
+                        <legend class="legend legend--app title__decor">Дополнительно:</legend>
+                        <div class="apps">
+                            <label for="sugar" class="app app--inline">
+                                <input type="checkbox" class="app__origin" id="sugar">
+                                <span class="app__psevdo"></span>
+                                <span class="app__label">Сахарозаменитель</span>
+                            </label>
+                            <label for="steel-water" class="app app--inline">
+                                <input type="checkbox" class="app__origin" id="steel-water">
+                                <span class="app__psevdo"></span>
+                                <span class="app__label">Питьевая вода</span>
+                            </label>
+                            <label for="milk" class="app app--inline">
+                                <input type="checkbox" class="app__origin" id="milk">
+                                <span class="app__psevdo"></span>
+                                <span class="app__label">Молоко</span>
+                            </label>
+                            <label for="vitamins" class="app app--inline">
+                                <input type="checkbox" class="app__origin" id="vitamins">
+                                <span class="app__psevdo"></span>
+                                <span class="app__label">Витамины</span>
+                            </label>
+                        </div>
+                    </fieldset>
                 </div>
-                <div class="container">
-                    <div class="form__field">
-                        <div class="form__contact">
-                            <fieldset class="fieldset contact__fieldset">
-                                <legend class="legend legend--contact title__decor">Контактные данные (владельца кота)</legend>
-                                <div class="field">
-                                    <label for="email" class="field__label">E-mail:*</label>
-                                    <div class="field__data">
-                                        <input type="email" id="email" name="email" placeholder="kuklachev@gmail.com"
-                                            class="field__input"></input>
-                                        <svg class="field__icon" width="20" height="20" aria-hidden="true"
-                                            focusable="false">
-                                            <use href="#email" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="field field--bottom">
-                                    <label for="phone" class="field__label">Телефон:*</label>
-                                    <div class="field__data">
-                                        <input type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90"
-                                            class="field__input"></input>
-                                        <svg class="field__icon" width="20" height="20" aria-hidden="true"
-                                            focusable="false">
-                                            <use href="#phone" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </fieldset>
-                        </div>
-                        <div class="form__about">
-                            <h3 class="form__title form__title--about title__decor">Комментарий</h3>
-                            <div class="field__data field__data--area">
-                                <textarea name="about" id="about" class="field__input field__input--area"
-                                    placeholder="Расскажите обо всех повАдках кота"></textarea>
-                            </div>
-                        </div>
-                        <div class="form__apps">
-                            <h3 class="form__title form__title--about title__decor">Дополнительно:</h3>
-                            <div class="apps">
-                                <label for="sugar" class="app app--inline">
-                                    <input type="checkbox" class="app__origin" id="sugar">
-                                    <span class="app__psevdo"></span>
-                                    <span class="app__label">Сахарозаменитель</span>
-                                </label>
-                                <label for="steel-water" class="app app--inline">
-                                    <input type="checkbox" class="app__origin" id="steel-water">
-                                    <span class="app__psevdo"></span>
-                                    <span class="app__label">Питьевая вода</span>
-                                </label>
-                                <label for="milk" class="app app--inline">
-                                    <input type="checkbox" class="app__origin" id="milk">
-                                    <span class="app__psevdo"></span>
-                                    <span class="app__label">Молоко</span>
-                                </label>
-                                <label for="vitamins" class="app app--inline">
-                                    <input type="checkbox" class="app__origin" id="vitamins">
-                                    <span class="app__psevdo"></span>
-                                    <span class="app__label">Витамины</span>
-                                </label>
-                            </div>
-                            <div class="app__heading">
-                                <button type="button"
-                                class="product__btn product__btn btn btn--brand btn__book btn__send">Отправить заявку</button>
-                                <p class="app__descr">* — Обязательные поля</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="form__send container">
+                    <button type="button" class="product__btn product__btn btn btn--brand btn__book btn__send">Отправить
+                        заявку</button>
+                    <p class="app__descr">* — Обязательные поля</p>
                 </div>
-            </form>
-            <section class="map">
+            </div>
+        </form>
+        <section class="map">
     <div class="container map__container">
         <div class="map__heading map__products">
             <h3 class="map__title">Приглашаем к сотрудничеству дилеров!</h3>
@@ -300,8 +288,8 @@
     <img src="img/map-mobile.jpg" alt="Картинка карты" width="320" height="362" class="map__pic">
     <button class="map__btn-pin" type="submit"></button>
 </section>
-        </main>
-        
+    </main>
+    
     <footer class="footer">
         <div class="container">
             <div class="footer__wrap">
