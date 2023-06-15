@@ -19,7 +19,6 @@
     --header-bottom-offset: 201px;
     @include media($desktop) {
         position: relative;
-        padding-top:52px;
         margin-bottom: 82px;
     }
 }
@@ -42,7 +41,7 @@
 }
 
 .header__wrap {
-    padding: 10px 20px 14px;
+    padding: 10px 0 14px;
     display: flex;
     align-items: flex-start;
     @include media($tablet) {
@@ -55,6 +54,7 @@
     }
     @include media($desktop) {
         margin-bottom: 105px;
+        padding-top: 54px;
     }
 }
 
@@ -292,4 +292,7 @@
 
 .header__wrap--form{
     border-bottom: 1px solid #D9D9D9;
+    @include media($tablet) {
+        border-bottom: none;
+    }
 }

@@ -10,23 +10,28 @@
     border-bottom: 1px solid #d9d9d9;
     padding-bottom: 27px;
     @include media($tablet) {
-        padding-left: $gatter-X-tablet;
+        padding-left: 0;
+        padding-right: 0;
         border-bottom: 0;
         margin-bottom: 72px;
+        padding-bottom: 0;
     }
 }
 
-.fieldset__container{
-    padding-left: $gatter-X-mobile;
-    padding-right: $gatter-X-mobile;
-}
+
 
 .fieldset__form{
     margin-bottom: 21px;
+    @include media($tablet) {
+        margin-bottom: 0;
+    }
 }
 
 .fieldset__target{
     margin-bottom: 26px;
+    @include media($tablet) {
+        margin-bottom: 0;
+    }
 }
 
 .fieldset__contact{

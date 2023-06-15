@@ -69,14 +69,6 @@
 }
 
 
-.btn__book {
-    @include font(16px, 20px, 400, $font-main);
-    width: 100%;
-    @include media($desktop) {
-        padding: 9px 26px;
-        width: 224px;
-    }
-}
 
 .btn__send {
     margin-bottom: 25px;
@@ -87,6 +79,6 @@
 
 .btn:disabled {
     pointer-events: none;
-    cursor-poiner: none;
+    cursor: default;
     opacity: .5;
 }

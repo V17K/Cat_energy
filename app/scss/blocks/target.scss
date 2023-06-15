@@ -7,8 +7,8 @@
     @include media($tablet) {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        padding: 0 26px;
         border-bottom: none;
+        padding-bottom: 0;
     }
     @include media($desktop) {
         padding: 0;
@@ -45,6 +45,12 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.target__origin:disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: .5;
 }
 
 .target__psevdo {

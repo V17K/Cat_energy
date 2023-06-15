@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat energy</title>
-    <link rel="preload" href="fonts/Oswald/oswald-regular.ttf?t=1686594361307" as="font" type="font/ttf" crossorigin>
-    <link rel="stylesheet" href="css/main.css?t=1686594361307">
+    <link rel="preload" href="fonts/Oswald/oswald-regular.ttf?t=1686858992437" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="css/main.css?t=1686858992437">
     <svg xmlns="http://www.w3.org/2000/svg" display="none">
         <symbol id="logo-title" viewBox="0 0 101 18">
             <g clip-path="url(#clip0_135_3354)">
@@ -124,48 +124,51 @@
 
 <body class="body">
     <div class="header header__form">
-        <div class="header__wrap header__wrap--form">
-            <div class="header__wrap-logo">
-                <a href="index.html" class="logo header__logo">
-                    <picture>
-                        <source srcset="img/logo-desktop.svg" type="image/svg+xml" media="(min-width: 1440px)">
-                        <source srcset="img/logo-tablet.svg" type="image/svg+xml" media="(min-width: 768px)">
-                        <source srcset="img/logo-mobile.svg" type="image/svg+xml" media="(min-width: 320px)">
-                        <img srcset="img/logo-mobile.svg" alt="На главную" width="33" height="38"
-                            class="header__logo-pic">
-                    </picture>
-                    <svg class="logo__title-icon" width="101" height="18" aria-hidden="true" focusable="false">
-                        <use href="#logo-title" />
-                    </svg>
-                </a>
+        <div class="container container__form">
+            <div class="header__wrap header__wrap--form">
+                <div class="header__wrap-logo">
+                    <a href="index.html" class="logo header__logo">
+                        <picture>
+                            <source srcset="img/logo-desktop.svg" type="image/svg+xml" media="(min-width: 1440px)">
+                            <source srcset="img/logo-tablet.svg" type="image/svg+xml" media="(min-width: 768px)">
+                            <source srcset="img/logo-mobile.svg" type="image/svg+xml" media="(min-width: 320px)">
+                            <img srcset="img/logo-mobile.svg" alt="На главную" width="33" height="38"
+                                class="header__logo-pic">
+                        </picture>
+                        <svg class="logo__title-icon" width="101" height="18" aria-hidden="true" focusable="false">
+                            <use href="#logo-title" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link nav__link--product">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="product.html" class="nav__link nav__link--product ">Каталог продукции</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="form.html" class="nav__link nav__link--product nav__link-product--current">Подбор
+                                программы</a>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" aria-label="открыть меню" class="header__burger">
+                    <span class="header__burger-line"></span>
+                </button>
             </div>
-            <div class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="index.html" class="nav__link nav__link--product">Главная</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="product.html" class="nav__link nav__link--product ">Каталог продукции</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="form.html" class="nav__link nav__link--product nav__link-product--current">Подбор
-                            программы</a>
-                    </li>
-                </ul>
+            <div class="header__content header__content--form">
+                <div class="header__heading header__heading--form">
+                    <h1 class="header__title header__title--form">Подбор программы</h1>
+                    <p class="header__decr header__decr--form">Заполните анкету, и мы подберем
+                        программу питания для вашего кота</p>
+                </div>
             </div>
-            <button type="button" aria-label="открыть меню" class="header__burger">
-                <span class="header__burger-line"></span>
-            </button>
         </div>
-        <div class="header__content header__content--form container">
-            <div class="header__heading header__heading--form">
-                <h1 class="header__title header__title--form">Подбор программы</h1>
-                <p class="header__decr header__decr--form">Заполните анкету, и мы подберем
-                    программу питания для вашего кота</p>
-            </div>
-        </div>
+
     </div>
-    <main class="main">
+    <main class="main main__form">
         <form action="#" class="form">
             <div class="container container__form">
                 <div class="form__field">
@@ -182,7 +185,8 @@
                                 <label for="weight" class="field__label">вес (кг):*</label>
                                 <div class="field__data">
                                     <input type="text" id="weight" name="weight" placeholder="Введите вес"
-                                        class="field__input"></input>
+                                        class="field__input" />
+                                    <span class="field__decor"></span>
                                 </div>
                             </div>
                             <div class="field field--bottom">
@@ -197,8 +201,8 @@
                     <fieldset class="fieldset fieldset__target">
                         <div class="target">
                             <div class="target__wrap">
-                                <label for="plus" class="target--inline disabled">
-                                    <input type="radio" id="plus" class="target__origin" name="group">
+                                <label for="plus" class="target--inline">
+                                    <input type="radio" id="plus" class="target__origin" disabled checked name="group">
                                     <span class="target__psevdo"></span>
                                     <span class="target__label">Похудение</span>
                                 </label>
@@ -232,26 +236,6 @@
                             <label for="telephone" class="field__label">Телефон:*</label>
                             <div class="field__data">
                                 <input type="tel" id="telephone" name="telephone" placeholder="8 (960) 900-60-90"
-                                    class="field__input"></input>
-                                <svg class="field__icon" width="20" height="20" aria-hidden="true" focusable="false">
-                                    <use href="#phone" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <label for="mail" class="field__label">E-mail:*</label>
-                            <div class="field__data">
-                                <input type="email" inputmode="email" id="mail" name="mail" placeholder="kuklachev@gmail.com"
-                                    class="field__input"></input>
-                                <svg class="field__icon" width="20" height="20" aria-hidden="true" focusable="false">
-                                    <use href="#email" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="field field--bottom">
-                            <label for="telephone" class="field__label">Телефон:*</label>
-                            <div class="field__data">
-                                <input type="tel" id="telephone" inputmode="tel" name="telephone" placeholder="8 (960) 900-60-90"
                                     class="field__input"></input>
                                 <svg class="field__icon" width="20" height="20" aria-hidden="true" focusable="false">
                                     <use href="#phone" />

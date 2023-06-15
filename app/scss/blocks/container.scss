@@ -2,6 +2,7 @@
     max-width: 1480px;
     margin: 0 auto;
     box-sizing: border-box;
+    margin: 0;
     padding-left: $gatter-X-mobile;
     padding-right: $gatter-X-mobile;
     @include media($tablet) {

@@ -18,11 +18,21 @@
     align-items: center;
     border: 1px solid #E7e7e7;
     box-sizing: border-box;
+    position: relative;
     @include media($desktop) {
         &:hover {
             border: 1px solid #CDCDCD;
         }
     }
+}
+
+.field__decor{
+    position: absolute;
+    inset: 0;
+    box-shadow: 0 0 0 2px #444444;
+    transition: opacity 0.2s ease;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .field__input {
@@ -36,6 +46,10 @@
     border: 0;
     flex-shrink: 1;
     padding: 9px 12px 13px 20px;
+}
+
+.field__input:focus ~ .field__decor{
+    opacity: 1;
 }
 
 .field__input::placeholder {
@@ -53,10 +67,14 @@
     }
 }
 
-.field__data:focus{
-    box-shadow: 0 0 0 2px #444444;
-    border-radius: 0;
-}
+// .field__data:focus-within{
+//     box-shadow: 0 0 0 2px #444444;
+// }
+
+// .field__data:has(.field__input:focus){
+//     box-shadow: 0 0 0 2px #444444;
+// }
+
 
 .field__icon{
     flex-shrink: 0;
